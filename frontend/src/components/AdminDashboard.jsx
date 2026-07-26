@@ -494,7 +494,7 @@ export default function AdminDashboard({ setGlobalView }) {
             <AlertTriangle className="w-14 h-14 text-red-500 mx-auto mb-3" />
             <h3 className="text-lg font-bold uppercase title-font text-white mb-2">End Auction?</h3>
             <p className="text-xs text-ipl-gray mb-6 leading-relaxed">
-              This will conclude the IPL Mega Auction permanently. Final standings will be calculated and the champion will be declared.
+              This will conclude the SPEC IPL AUCTION 2026 permanently. Final standings will be calculated and the champion will be declared.
             </p>
             <div className="flex space-x-3 justify-center">
               <button 

@@ -62,11 +62,8 @@ export default function Login() {
             <CricketBatIcon className="w-10 h-10 text-ipl-goldLight relative z-10" />
           </div>
           <h1 className="text-2xl font-black title-font uppercase tracking-wider gold-text-gradient leading-tight">
-            IPL MEGA AUCTION
+            SPEC IPL AUCTION 2026
           </h1>
-          <p className="text-[10px] text-ipl-gray uppercase tracking-[0.3em] mt-1.5 font-semibold">
-            Live Auction Simulator • 2026
-          </p>
         </div>
 
         {/* Error alert */}

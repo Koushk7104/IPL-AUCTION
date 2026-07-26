@@ -42,7 +42,7 @@ function AppContent() {
             <div className="gold-gradient w-1 h-8 rounded-full"></div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-black title-font tracking-wider text-white uppercase">IPL AUCTION</span>
+                <span className="text-sm font-black title-font tracking-wider text-white uppercase">SPEC IPL AUCTION 2026</span>
                 {isLive && (
                   <span className="live-indicator live-indicator-active">
                     <span className="live-indicator-dot"></span>

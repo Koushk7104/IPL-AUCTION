@@ -32,7 +32,7 @@ const startServer = async () => {
 
   // Basic health check route
   app.get('/', (req, res) => {
-    res.json({ message: 'IPL Mega Auction Simulator API is running...' });
+    res.json({ message: 'SPEC IPL AUCTION 2026 API is running...' });
   });
 
   // Error handling middleware

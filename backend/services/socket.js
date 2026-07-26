@@ -523,7 +523,7 @@ const initSocket = (server, demoMode = false) => {
         broadcastPlayerRefresh(io);
         io.to('general').emit('auction:log', {
           type: 'success',
-          message: 'The IPL Mega Auction 2026 has concluded! Check out the final leaderboard.'
+          message: 'The SPEC IPL AUCTION 2026 has concluded! Check out the final leaderboard.'
         });
       } catch (err) {
         console.error(err);

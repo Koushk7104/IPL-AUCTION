@@ -51,7 +51,7 @@ export default function PublicDisplay() {
             <Sparkles className="w-6 h-6 text-ipl-goldLight animate-pulse-slow" />
           </div>
           <div>
-            <h1 className="text-xl md:text-2xl font-black title-font uppercase tracking-wider gold-text-gradient">IPL MEGA AUCTION</h1>
+            <h1 className="text-xl md:text-2xl font-black title-font uppercase tracking-wider gold-text-gradient">SPEC IPL AUCTION 2026</h1>
             <p className="text-[10px] text-white/40 tracking-[0.2em] uppercase">Live Arena Display • 2026</p>
           </div>
         </div>
@@ -289,7 +289,7 @@ export default function PublicDisplay() {
 
       {/* Footer */}
       <div className="text-center text-[9px] text-ipl-gray/50 flex justify-between items-center border-t border-white/5 pt-3">
-        <span>© 2026 IPL Mega Auction Simulator</span>
+        <span>© 2026 SPEC IPL AUCTION</span>
         <span>Live Arena Display</span>
       </div>
     </div>
