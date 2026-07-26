@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Syncopate:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Outfit', sans-serif;
+    @apply bg-ipl-dark text-white overflow-x-hidden;
+    background-image:
+      radial-gradient(ellipse at 20% 0%, rgba(212, 175, 55, 0.06) 0px, transparent 60%),
+      radial-gradient(ellipse at 80% 100%, rgba(37, 99, 235, 0.04) 0px, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(10, 14, 26, 1) 0px, transparent 100%),
+      radial-gradient(ellipse at 100% 0%, rgba(124, 58, 237, 0.03) 0px, transparent 40%);
+    background-attachment: fixed;
+  }
+
+  /* Remove default focus outlines, use custom ones */
+  *:focus {
+    outline: none;
+  }
+}
+
+/* ============================
+   SCROLLBAR
+   ============================ */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2236;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* ============================
+   GRADIENTS & GLOWS
+   ============================ */
+.gold-gradient {
+  background: linear-gradient(135deg, #FFE082 0%, #F5C453 30%, #D4AF37 60%, #B8860B 100%);
+}
+
+.gold-gradient-horizontal {
+  background: linear-gradient(90deg, #D4AF37, #F5C453, #D4AF37);
+  background-size: 200% 100%;
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFE082 0%, #F5C453 40%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ipl-gradient {
+  background: linear-gradient(135deg, #1a1040 0%, #0a0e1a 40%, #0f172a 100%);
+}
+
+.stadium-glow {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 0% 100%, rgba(37, 99, 235, 0.05) 0%, transparent 40%),
+    radial-gradient(ellipse at 100% 100%, rgba(124, 58, 237, 0.05) 0%, transparent 40%);
+}
+
+/* ============================
+   TYPOGRAPHY
+   ============================ */
+.title-font {
+  font-family: 'Syncopate', sans-serif;
+  letter-spacing: 0.08em;
+}
+
+/* ============================
+   CARD STYLES
+   ============================ */
+.gold-border-glow {
+  border: 1px solid rgba(245, 196, 83, 0.15);
+  box-shadow: 0 0 15px rgba(245, 196, 83, 0.06);
+  transition: all 0.3s ease;
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(245, 196, 83, 0.4);
+  box-shadow: 0 0 25px rgba(245, 196, 83, 0.15);
+}
+
+.glassmorphism {
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glassmorphism-gold {
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(245, 196, 83, 0.2);
+  box-shadow:
+    0 8px 32px 0 rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(245, 196, 83, 0.1),
+    inset 0 0 20px rgba(245, 196, 83, 0.03);
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(245, 196, 83, 0.3);
+  box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.6), 0 0 12px rgba(245, 196, 83, 0.08);
+}
+
+/* ============================
+   AUCTION STATE INDICATORS
+   ============================ */
+
+/* Status strip colors */
+.status-idle {
+  background: linear-gradient(90deg, rgba(75, 85, 99, 0.3), rgba(75, 85, 99, 0.1));
+  border-color: rgba(75, 85, 99, 0.3);
+}
+
+.status-displaying {
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.15), rgba(37, 99, 235, 0.05));
+  border-color: rgba(37, 99, 235, 0.4);
+  animation: statusPulse 2s ease-in-out infinite;
+}
+
+.status-active {
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+  border-color: rgba(16, 185, 129, 0.4);
+  animation: statusPulse 1.5s ease-in-out infinite;
+}
+
+.status-paused {
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05));
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.status-sold {
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.05));
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+.status-unsold {
+  background: linear-gradient(90deg, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0.05));
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+/* ============================
+   LIVE INDICATOR
+   ============================ */
+.live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.live-indicator-active {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #EF4444;
+}
+
+.live-indicator-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #EF4444;
+  animation: liveDot 1.5s ease-in-out infinite;
+}
+
+@keyframes liveDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.7); }
+}
+
+/* ============================
+   AUCTION ANIMATIONS
+   ============================ */
+
+/* Gold pulse border animation */
+@keyframes goldPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(245, 196, 83, 0.15);
+    border-color: rgba(245, 196, 83, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(245, 196, 83, 0.4);
+    border-color: rgba(245, 196, 83, 0.5);
+  }
+}
+
+.animate-gold-pulse {
+  animation: goldPulse 2s infinite ease-in-out;
+}
+
+/* Sold stamp overlay */
+.sold-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 30;
+  border-radius: inherit;
+}
+
+.sold-stamp {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #10B981;
+  border: 4px solid #10B981;
+  padding: 8px 32px;
+  transform: rotate(-3deg);
+  animation: soldStamp 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+  text-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.2);
+}
+
+.unsold-stamp {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #EF4444;
+  border: 4px solid #EF4444;
+  padding: 8px 32px;
+  transform: rotate(-3deg);
+  animation: soldStamp 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+  text-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+  box-shadow: 0 0 40px rgba(239, 68, 68, 0.2);
+}
+
+@keyframes soldStamp {
+  0% { opacity: 0; transform: scale(3) rotate(-15deg); }
+  60% { opacity: 1; transform: scale(0.9) rotate(-5deg); }
+  100% { opacity: 1; transform: scale(1) rotate(-3deg); }
+}
+
+/* Bid increment flash */
+.bid-flash {
+  animation: bidFlash 0.5s ease-out;
+}
+
+@keyframes bidFlash {
+  0% { background-color: rgba(245, 196, 83, 0.25); transform: scale(1.01); }
+  100% { background-color: transparent; transform: scale(1); }
+}
+
+/* Timer critical state (< 5 seconds) */
+.timer-critical {
+  animation: timerCritical 0.5s ease-in-out infinite;
+}
+
+@keyframes timerCritical {
+  0%, 100% { color: #EF4444; text-shadow: 0 0 10px rgba(239, 68, 68, 0.3); }
+  50% { color: #FCA5A5; text-shadow: 0 0 25px rgba(239, 68, 68, 0.6); }
+}
+
+/* ============================
+   PLAYER CARD REVEAL
+   ============================ */
+.player-card-reveal {
+  animation: playerReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes playerReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* ============================
+   STAGE PROGRESS BAR
+   ============================ */
+.stage-bar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.stage-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.stage-dot.active {
+  border-color: #F5C453;
+  background: #F5C453;
+  box-shadow: 0 0 10px rgba(245, 196, 83, 0.5);
+}
+
+.stage-dot.completed {
+  border-color: #10B981;
+  background: #10B981;
+}
+
+.stage-line {
+  height: 2px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background 0.3s ease;
+}
+
+.stage-line.completed {
+  background: #10B981;
+}
+
+.stage-line.active {
+  background: linear-gradient(90deg, #10B981, #F5C453);
+}
+
+/* ============================
+   SHIMMER LOADING
+   ============================ */
+.shimmer {
+  background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+/* ============================
+   CRICKET DECORATIVE
+   ============================ */
+.cricket-stump-pattern {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 18px,
+    rgba(212, 175, 55, 0.03) 18px,
+    rgba(212, 175, 55, 0.03) 20px
+  );
+}
+
+/* ============================
+   RESPONSIVE UTILITIES
+   ============================ */
+@media (max-width: 768px) {
+  .title-font {
+    letter-spacing: 0.04em;
+  }
+}
+
+/* Select dropdown styling */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238F9CAE' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 28px;
+}
