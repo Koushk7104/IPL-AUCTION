@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSocket } from '../context/SocketContext';
 import { DollarSign, Trophy, Sparkles, Award, User, Clock, Bell, Zap, Radio, Hand } from 'lucide-react';
 
 export default function TeamDashboard() {
   const { 
-    user, auctionState, auctionStage, bidHistory, logs, notification, 
+    user, auctionState, auctionStage, teams, bidHistory, logs, notification, 
     soldAnimation, unsoldAnimation, clearNotification, placeBid 
   } = useSocket();
+
+  const [bidCooldown, setBidCooldown] = useState(false);
 
   const formatPurse = (amount) => {
     return `₹${(amount / 10000000).toFixed(2)} Cr`;
@@ -22,14 +24,19 @@ export default function TeamDashboard() {
 
   // Can bid checks
   const canBidAmount = (increment) => {
-    if (!isBiddingActive) return false;
+    if (!isBiddingActive || bidCooldown) return false;
     if (isTeamLeading) return false;
     const nextBid = isFirstBid ? auctionState.currentPlayer.basePrice : (currentBidAmount + increment);
     return user.remainingPurse >= nextBid;
   };
 
   const handleBidClick = (increment) => {
+    if (bidCooldown) return;
+    setBidCooldown(true);
     placeBid(increment);
+    setTimeout(() => {
+      setBidCooldown(false);
+    }, 2000);
   };
 
   const getTimerColor = (time) => {
@@ -181,17 +188,24 @@ export default function TeamDashboard() {
                   
                   {/* Sold/Unsold Overlay */}
                   {soldAnimation && (
-                    <div className="sold-overlay">
-                      <div className="text-center">
-                        <div className="sold-stamp">SOLD!</div>
-                        <p className="text-white text-sm font-bold mt-3 animate-fade-in">{soldAnimation.teamName}</p>
-                        <p className="text-ipl-goldLight text-lg font-black font-mono animate-fade-in">{soldAnimation.price}</p>
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md">
+                      <div className="text-center p-12 bg-ipl-dark border-4 border-emerald-500 rounded-3xl shadow-[0_0_150px_rgba(16,185,129,0.4)] animate-scale-in">
+                        <div className="sold-stamp text-7xl md:text-[8rem] mb-8 leading-none">SOLD!</div>
+                        <div className="flex flex-col items-center gap-4">
+                          <p className="text-white text-3xl font-black animate-fade-in uppercase">{soldAnimation.playerName}</p>
+                          <p className="text-ipl-gray text-sm uppercase tracking-widest">goes to</p>
+                          {teams.find(t => t.teamName === soldAnimation.teamName) && (
+                            <img src={teams.find(t => t.teamName === soldAnimation.teamName).logo} className="w-24 h-24 rounded-full border-4 border-emerald-500/50 shadow-lg" alt="" />
+                          )}
+                          <p className="text-white text-3xl font-bold animate-fade-in">{soldAnimation.teamName}</p>
+                          <p className="text-emerald-400 text-6xl font-black font-mono animate-fade-in mt-2 border-t border-white/10 pt-6">{soldAnimation.price}</p>
+                        </div>
                       </div>
                     </div>
                   )}
                   {unsoldAnimation && (
-                    <div className="sold-overlay">
-                      <div className="unsold-stamp">UNSOLD</div>
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md">
+                      <div className="unsold-stamp text-6xl md:text-[8rem]">UNSOLD</div>
                     </div>
                   )}
                   
@@ -324,13 +338,16 @@ export default function TeamDashboard() {
                         />
                         <button
                           onClick={() => {
+                            if (bidCooldown) return;
                             const val = parseFloat(document.getElementById('customBidInput').value);
                             if (val > 0) {
+                              setBidCooldown(true);
                               placeBid(null, val * 10000000);
                               document.getElementById('customBidInput').value = '';
+                              setTimeout(() => setBidCooldown(false), 2000);
                             }
                           }}
-                          disabled={!isBiddingActive || isTeamLeading}
+                          disabled={!isBiddingActive || isTeamLeading || bidCooldown}
                           className="bg-ipl-gold/10 border border-ipl-gold/30 text-ipl-goldLight hover:bg-ipl-gold hover:text-ipl-dark px-4 py-2 rounded-xl text-xs font-black disabled:opacity-20 transition-all duration-200"
                         >
                           Bid Custom

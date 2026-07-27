@@ -11,7 +11,7 @@ export default function AdminDashboard({ setGlobalView }) {
   const { 
     auctionState, auctionStage, teams, logs, playersVersion, soldAnimation, unsoldAnimation,
     selectPlayer, startAuction, pauseAuction, 
-    markSold, markUnsold, skipPlayer, endAuction 
+    markSold, markUnsold, skipPlayer, endAuction, resetAuction
   } = useSocket();
 
   const [players, setPlayers] = useState([]);
@@ -19,6 +19,7 @@ export default function AdminDashboard({ setGlobalView }) {
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('pending');
   const [expandedTeamId, setExpandedTeamId] = useState(null);
   const [showEndConfirmation, setShowEndConfirmation] = useState(false);
+  const [showResetConfirmation, setShowResetConfirmation] = useState(false);
 
   // Fetch all players to select from
   const fetchPlayers = async () => {
@@ -92,12 +93,23 @@ export default function AdminDashboard({ setGlobalView }) {
             <Eye className="w-3.5 h-3.5" /> Projector
           </button>
           
-          <button 
-            onClick={() => setShowEndConfirmation(true)}
-            className="px-4 py-2 bg-red-600/20 border border-red-500/30 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-[11px] font-bold uppercase tracking-wider transition duration-300"
-          >
-            End Auction
-          </button>
+          {auctionStage === 'ended' && (
+            <button 
+              onClick={() => setShowResetConfirmation(true)}
+              className="px-4 py-2 bg-red-900/40 border border-red-500/50 text-red-300 hover:bg-red-600 hover:text-white rounded-xl text-[11px] font-bold uppercase tracking-wider transition duration-300 flex items-center gap-1.5"
+            >
+              <AlertTriangle className="w-3.5 h-3.5" /> Reset Entire Auction
+            </button>
+          )}
+
+          {auctionStage !== 'ended' && (
+            <button 
+              onClick={() => setShowEndConfirmation(true)}
+              className="px-4 py-2 bg-red-600/20 border border-red-500/30 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-[11px] font-bold uppercase tracking-wider transition duration-300"
+            >
+              End Auction
+            </button>
+          )}
         </div>
       </div>
 
@@ -509,6 +521,36 @@ export default function AdminDashboard({ setGlobalView }) {
               </button>
               <button 
                 onClick={() => setShowEndConfirmation(false)}
+                className="px-5 py-2.5 bg-white/5 border border-white/10 text-white text-xs font-semibold rounded-xl hover:bg-white/10 transition duration-200"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* RESET AUCTION CONFIRMATION MODAL */}
+      {showResetConfirmation && (
+        <div className="fixed inset-0 bg-black/85 backdrop-blur-md z-50 flex items-center justify-center p-4 animate-fade-in">
+          <div className="bg-ipl-card border-2 border-red-500/50 rounded-2xl max-w-md w-full p-6 text-center shadow-red-glow animate-scale-in">
+            <AlertTriangle className="w-14 h-14 text-red-500 mx-auto mb-3 animate-pulse" />
+            <h3 className="text-lg font-bold uppercase title-font text-white mb-2">Reset Entire Auction?</h3>
+            <p className="text-xs text-red-300 mb-6 leading-relaxed bg-red-900/20 p-3 rounded-xl border border-red-900/50">
+              WARNING: This will erase all team squads, reset all purses back to ₹210 Cr, and return all players to the unauctioned pool. This action cannot be undone!
+            </p>
+            <div className="flex space-x-3 justify-center">
+              <button 
+                onClick={() => {
+                  resetAuction();
+                  setShowResetConfirmation(false);
+                }}
+                className="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white text-xs font-bold rounded-xl transition duration-200"
+              >
+                Yes, Reset Everything
+              </button>
+              <button 
+                onClick={() => setShowResetConfirmation(false)}
                 className="px-5 py-2.5 bg-white/5 border border-white/10 text-white text-xs font-semibold rounded-xl hover:bg-white/10 transition duration-200"
               >
                 Cancel

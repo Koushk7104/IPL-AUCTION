@@ -197,6 +197,10 @@ export const SocketProvider = ({ children }) => {
       setNotification({ type: 'error', message: errMessage });
     });
 
+    newSocket.on('auction:reset', () => {
+      window.location.reload();
+    });
+
     setSocket(newSocket);
 
     return () => {
@@ -286,6 +290,12 @@ export const SocketProvider = ({ children }) => {
     }
   };
 
+  const resetAuction = () => {
+    if (socket && user?.role === 'admin') {
+      socket.emit('admin:reset-auction');
+    }
+  };
+
   // Team Bid
   const placeBid = (increment, customAmount) => {
     if (socket && user?.role === 'team') {
@@ -325,6 +335,7 @@ export const SocketProvider = ({ children }) => {
         markUnsold,
         skipPlayer,
         endAuction,
+        resetAuction,
         // Team commands
         placeBid
       }}

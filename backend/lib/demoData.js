@@ -77,8 +77,8 @@ const buildDemoTeams = async () => {
       password: team.password || 'password123',
       teamName: team.teamName || team.name || `Team ${index + 1}`,
       logo: toAbsoluteAssetUrl(team.logo || team.logoUrl || team.teamLogo || team.image || ''),
-      initialPurse: team.initialPurse || 1250000000,
-      remainingPurse: team.remainingPurse || team.initialPurse || 1250000000,
+      initialPurse: team.initialPurse || 2100000000,
+      remainingPurse: team.remainingPurse || team.initialPurse || 2100000000,
       squad: team.squad || [],
       squadStrength: team.squadStrength || 0,
       avgRating: team.avgRating || 0,
@@ -102,8 +102,8 @@ const buildDemoTeams = async () => {
     password: passwordHash,
     teamName: team.teamName,
     logo: `https://api.dicebear.com/7.x/identicon/svg?seed=${encodeURIComponent(team.username)}&backgroundColor=0b0f19&color=f5c453`,
-    initialPurse: 1250000000,
-    remainingPurse: 1250000000,
+    initialPurse: 2100000000,
+    remainingPurse: 2100000000,
     squad: [],
     squadStrength: 0,
     avgRating: 0,
@@ -181,8 +181,8 @@ const demoAuctionState = {
   status: 'idle',
   currentBid: 0,
   leadingTeam: null,
-  timerRemaining: 120,
-  timerDuration: 120
+  timerRemaining: 360,
+  timerDuration: 360
 };
 
 const initDemoTeams = async () => {

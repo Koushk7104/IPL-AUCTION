@@ -250,7 +250,7 @@ const initSocket = (server, demoMode = false) => {
         state.status = 'idle';
         state.currentBid = 0;
         state.leadingTeam = null;
-        state.timerRemaining = state.timerDuration || 120;
+        state.timerRemaining = state.timerDuration || 360;
         await dataLayer.saveAuctionState(state);
 
         // Delete any old bid history
@@ -392,7 +392,7 @@ const initSocket = (server, demoMode = false) => {
         state.status = 'idle';
         state.currentBid = 0;
         state.leadingTeam = null;
-        state.timerRemaining = state.timerDuration || 120;
+        state.timerRemaining = state.timerDuration || 360;
         await dataLayer.saveAuctionState(state);
 
         // Notify
@@ -445,7 +445,7 @@ const initSocket = (server, demoMode = false) => {
         state.status = 'idle';
         state.currentBid = 0;
         state.leadingTeam = null;
-        state.timerRemaining = state.timerDuration || 120;
+        state.timerRemaining = state.timerDuration || 360;
         await dataLayer.saveAuctionState(state);
 
         const updatedState = await dataLayer.getFullAuctionState();
@@ -488,7 +488,7 @@ const initSocket = (server, demoMode = false) => {
         state.status = 'idle';
         state.currentBid = 0;
         state.leadingTeam = null;
-        state.timerRemaining = state.timerDuration || 120;
+        state.timerRemaining = state.timerDuration || 360;
         await dataLayer.saveAuctionState(state);
 
         const updatedState = await dataLayer.getFullAuctionState();
@@ -528,6 +528,87 @@ const initSocket = (server, demoMode = false) => {
       } catch (err) {
         console.error(err);
         socket.emit('error', 'Failed to end auction');
+      }
+    });
+
+    // 7.5 Reset Auction
+    socket.on('admin:reset-auction', async () => {
+      if (socket.user.role !== 'admin') return;
+
+      try {
+        stopTimer();
+
+        if (isDemoMode) {
+          const { seedDB } = require('../scripts/seed');
+          demoData.demoTeams.length = 0; // Clear existing demo teams
+          demoData.demoPlayers.length = 0;
+          await require('../lib/demoData').getDemoTeams(); // Will re-init teams and players from seed or defaults
+          // Instead of a complex manual clear, we can just invoke seed logic for demo
+          demoData.demoTeams.length = 0; 
+          demoData.demoPlayers.length = 0;
+          const { teamsData, playersRaw, calculateRatingAndBasePrice, getAvatar } = require('../scripts/seed');
+          const bcrypt = require('bcryptjs');
+          const salt = await bcrypt.genSalt(10);
+          const passwordHash = await bcrypt.hash('password123', salt);
+          
+          teamsData.forEach((team) => {
+            demoData.demoTeams.push({
+              _id: `demo-${team.username}`,
+              username: team.username,
+              password: passwordHash,
+              teamName: team.teamName,
+              logo: `https://api.dicebear.com/7.x/identicon/svg?seed=${encodeURIComponent(team.username)}&backgroundColor=0b0f19&color=f5c453`,
+              initialPurse: 2100000000,
+              remainingPurse: 2100000000,
+              squad: [],
+              squadStrength: 0,
+              avgRating: 0,
+              roleCounts: { batters: 0, bowlers: 0, allRounders: 0, wicketKeepers: 0 },
+              highestPurchase: 0,
+              cheapestPurchase: 0
+            });
+          });
+
+          playersRaw.forEach((player, index) => {
+            const { rating, basePrice } = calculateRatingAndBasePrice(player);
+            demoData.demoPlayers.push({
+              _id: `demo-player-${index + 1}`,
+              ...player,
+              image: getAvatar(player.name),
+              performanceRating: rating,
+              basePrice,
+              status: 'pending',
+              currentBid: 0,
+              leadingTeam: null,
+              soldPrice: null,
+              buyerTeam: null,
+              createdAt: new Date().toISOString(),
+              updatedAt: new Date().toISOString()
+            });
+          });
+
+          demoData.demoAuctionState.currentPlayer = null;
+          demoData.demoAuctionState.status = 'idle';
+          demoData.demoAuctionState.currentBid = 0;
+          demoData.demoAuctionState.leadingTeam = null;
+          demoData.demoAuctionState.timerRemaining = 360;
+          demoData.demoAuctionState.timerDuration = 360;
+        } else {
+          // If in prod mode (mongodb), could drop collections and re-seed, or just clean state
+          await Player.updateMany({}, { status: 'pending', currentBid: 0, leadingTeam: null, soldPrice: null, buyerTeam: null });
+          await Team.updateMany({}, { remainingPurse: 2100000000, squad: [], squadStrength: 0, avgRating: 0, roleCounts: { batters: 0, bowlers: 0, allRounders: 0, wicketKeepers: 0 }, highestPurchase: 0, cheapestPurchase: 0 });
+          await AuctionState.updateMany({}, { currentPlayer: null, status: 'idle', currentBid: 0, leadingTeam: null, timerRemaining: 360, timerDuration: 360 });
+          await BidHistory.deleteMany({});
+        }
+
+        io.to('general').emit('auction:reset');
+        io.to('general').emit('auction:log', {
+          type: 'warning',
+          message: 'The entire auction has been RESET by the administrator.'
+        });
+      } catch (err) {
+        console.error(err);
+        socket.emit('error', 'Failed to reset auction');
       }
     });
 
@@ -581,7 +662,6 @@ const initSocket = (server, demoMode = false) => {
 
         state.currentBid = nextBid;
         state.leadingTeam = team._id;
-        state.timerRemaining = state.timerDuration || 120;
         await dataLayer.saveAuctionState(state);
 
         player.currentBid = nextBid;

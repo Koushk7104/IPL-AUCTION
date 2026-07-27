@@ -49,17 +49,17 @@ function calculateRatingAndBasePrice(player) {
   rating = Math.min(Math.max(rating, 60), 99);
 
   // Map rating to base price
-  let basePrice = 30000000; // default 30L
+  let basePrice = 2000000; // default 20L
   if (rating >= 95) {
-    basePrice = 200000000; // 2.00 Cr
+    basePrice = 20000000; // 2.00 Cr
   } else if (rating >= 90) {
-    basePrice = 150000000; // 1.50 Cr
+    basePrice = 15000000; // 1.50 Cr
   } else if (rating >= 85) {
-    basePrice = 100000000; // 1.00 Cr
+    basePrice = 10000000; // 1.00 Cr
   } else if (rating >= 80) {
-    basePrice = 75000000;  // 75L
+    basePrice = 5000000;  // 50L
   } else if (rating >= 70) {
-    basePrice = 50000000;  // 50L
+    basePrice = 2000000;  // 20L
   }
 
   return { rating, basePrice };
@@ -596,8 +596,8 @@ const seedDB = async ({ exit = true } = {}) => {
         username: t.username,
         password: defaultPasswordHash,
         logo: `https://api.dicebear.com/7.x/identicon/svg?seed=${encodeURIComponent(t.username)}&backgroundColor=0b0f19&color=f5c453`,
-        initialPurse: 1250000000,
-        remainingPurse: 1250000000,
+        initialPurse: 2100000000,
+        remainingPurse: 2100000000,
         squad: [],
         squadStrength: 0,
         avgRating: 0,
@@ -639,8 +639,8 @@ const seedDB = async ({ exit = true } = {}) => {
       status: 'idle',
       currentBid: 0,
       leadingTeam: null,
-      timerRemaining: 30,
-      timerDuration: 30
+      timerRemaining: 360,
+      timerDuration: 360
     });
     await auctionState.save();
     console.log('AuctionState initialized.');
