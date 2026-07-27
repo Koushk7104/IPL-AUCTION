@@ -147,11 +147,18 @@ export default function TeamDashboard() {
         {/* Squad Count */}
         <div className="bg-ipl-card border border-white/5 rounded-2xl p-3.5 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="flex justify-between items-center text-[10px] text-ipl-gray">
-            <span>PLAYERS</span>
+            <span>SQUAD SIZE</span>
             <User className="w-3.5 h-3.5 text-ipl-gold" />
           </div>
-          <div className="text-xl font-black text-white font-mono mt-1">{user.squad?.length || 0}</div>
-          <div className="text-[8px] text-white/30 mt-0.5">Spent: {formatPurse(user.initialPurse - user.remainingPurse)}</div>
+          <div className="text-xl font-black font-mono mt-1 flex items-baseline gap-1">
+            <span className={(user.squad?.length || 0) >= 15 ? 'text-emerald-400' : 'text-amber-400'}>
+              {user.squad?.length || 0}
+            </span>
+            <span className="text-xs text-white/40 font-normal">/ 15 Req.</span>
+          </div>
+          <div className="text-[8px] text-white/30 mt-0.5">
+            {(user.squad?.length || 0) >= 15 ? '✓ Qualified Squad' : `Need ${15 - (user.squad?.length || 0)} more to avoid elimination`}
+          </div>
         </div>
 
         {/* Squad Strength */}

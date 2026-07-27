@@ -33,8 +33,20 @@ router.get('/leaderboard', protect, async (req, res) => {
 
     const teams = await Team.find().populate('squad').select('-password');
     
-    // Sort by squad strength descending. If there is a tie, sort by average rating descending, then remaining purse descending
-    const rankedTeams = teams.sort((a, b) => {
+    // Process qualification (must have at least 15 players) and sort
+    const rankedTeams = teams.map((t) => {
+      const squadCount = t.squad?.length || 0;
+      const isQualified = squadCount >= 15;
+      return {
+        ...t.toObject(),
+        isQualified,
+        disqualifiedReason: isQualified ? null : `Incomplete squad (${squadCount}/15 players)`
+      };
+    }).sort((a, b) => {
+      // Qualified teams always rank above disqualified/incomplete teams
+      if (a.isQualified !== b.isQualified) {
+        return a.isQualified ? -1 : 1;
+      }
       if (b.squadStrength !== a.squadStrength) {
         return b.squadStrength - a.squadStrength;
       }

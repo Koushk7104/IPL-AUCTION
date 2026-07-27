@@ -90,15 +90,34 @@ export default function PublicDisplay() {
           </h2>
 
           <div className="space-y-2 flex-1 overflow-y-auto pr-1">
-            {[...teams].sort((a,b) => b.squadStrength - a.squadStrength).map((team, idx) => (
-              <div key={team._id} className="flex justify-between items-center bg-ipl-dark/50 border border-white/5 p-2 rounded-xl text-xs hover:border-ipl-gold/15 transition">
+            {[...teams].map(t => {
+              const count = Array.isArray(t.squad) ? t.squad.length : 0;
+              return { ...t, squadCount: count, isQualified: count >= 15 };
+            }).sort((a, b) => {
+              if (a.isQualified !== b.isQualified) return a.isQualified ? -1 : 1;
+              return b.squadStrength - a.squadStrength;
+            }).map((team, idx) => (
+              <div key={team._id} className={`flex justify-between items-center p-2 rounded-xl text-xs transition border ${
+                team.isQualified 
+                  ? 'bg-ipl-dark/50 border-white/5 hover:border-ipl-gold/15' 
+                  : 'bg-red-950/20 border-red-500/20 opacity-80'
+              }`}>
                 <div className="flex items-center space-x-2 truncate">
-                  <span className={`w-5 h-5 text-[10px] font-black flex items-center justify-center rounded-full ${idx === 0 ? 'bg-ipl-gold text-ipl-dark' : 'bg-white/5 text-ipl-gray'}`}>{idx + 1}</span>
-                  <img src={team.logo} alt={team.teamName} className="w-5 h-5 rounded-full bg-ipl-dark" />
-                  <span className="font-bold text-white truncate max-w-[80px] text-[11px]">{team.teamName}</span>
+                  <span className={`w-5 h-5 text-[10px] font-black flex items-center justify-center rounded-full ${
+                    team.isQualified && idx === 0 ? 'bg-ipl-gold text-ipl-dark' : 'bg-white/5 text-ipl-gray'
+                  }`}>{idx + 1}</span>
+                  <img src={team.logo} alt={team.teamName} className="w-5 h-5 rounded-full bg-ipl-dark object-contain" />
+                  <div>
+                    <span className="font-bold text-white truncate max-w-[80px] text-[11px] block">{team.teamName}</span>
+                    <span className={`text-[8px] block font-semibold ${team.isQualified ? 'text-emerald-400' : 'text-amber-400'}`}>
+                      {team.squadCount}/15 Players
+                    </span>
+                  </div>
                 </div>
                 <div className="text-right">
-                  <span className="text-[10px] text-ipl-goldLight font-bold font-mono block">{team.squadStrength}</span>
+                  <span className={`text-[10px] font-bold font-mono block ${team.isQualified ? 'text-ipl-goldLight' : 'text-red-400/70 line-through'}`}>
+                    {team.squadStrength} pts
+                  </span>
                   <span className="text-[8px] text-ipl-gray block">₹{(team.remainingPurse / 10000000).toFixed(0)}Cr</span>
                 </div>
               </div>

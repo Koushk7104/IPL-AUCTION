@@ -640,6 +640,10 @@ const initSocket = (server, demoMode = false) => {
           return socket.emit('error', 'Invalid player or team context');
         }
 
+        if (team.squad && team.squad.length >= 15) {
+          return socket.emit('error', 'Squad limit reached! Your team already has 15 players.');
+        }
+
         const isFirstBid = !state.leadingTeam;
         let nextBid;
         if (customAmount) {

@@ -226,7 +226,18 @@ const getDemoTeams = async () => {
 
 const getDemoLeaderboard = async () => {
   const teams = await getDemoTeams();
-  return teams.sort((a, b) => {
+  return teams.map((t) => {
+    const squadCount = t.squad?.length || 0;
+    const isQualified = squadCount >= 15;
+    return {
+      ...t,
+      isQualified,
+      disqualifiedReason: isQualified ? null : `Incomplete squad (${squadCount}/15 players)`
+    };
+  }).sort((a, b) => {
+    if (a.isQualified !== b.isQualified) {
+      return a.isQualified ? -1 : 1;
+    }
     if (b.squadStrength !== a.squadStrength) return b.squadStrength - a.squadStrength;
     if (b.avgRating !== a.avgRating) return b.avgRating - a.avgRating;
     return b.remainingPurse - a.remainingPurse;

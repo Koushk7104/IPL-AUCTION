@@ -47,8 +47,9 @@ export default function Leaderboard() {
     );
   }
 
-  const champion = rankedTeams[0];
-  const top3 = rankedTeams.slice(0, 3);
+  const qualifiedTeams = rankedTeams.filter((t) => (t.squad?.length || 0) >= 15);
+  const champion = qualifiedTeams.length > 0 ? qualifiedTeams[0] : null;
+  const top3 = qualifiedTeams.slice(0, 3);
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
@@ -82,26 +83,26 @@ export default function Leaderboard() {
               <strong className="text-xl font-black text-ipl-goldLight font-mono">{champion.avgRating}</strong>
             </div>
             <div className="text-center">
-              <span className="text-[9px] text-ipl-gray uppercase tracking-widest block">Players</span>
-              <strong className="text-xl font-black text-white font-mono">{champion.squad?.length || 0}</strong>
+              <span className="text-[9px] text-ipl-gray uppercase tracking-widest block">Squad</span>
+              <strong className="text-xl font-black text-emerald-400 font-mono">{champion.squad?.length || 0}/15</strong>
             </div>
           </div>
 
           <p className="text-[10px] text-white/40 mt-5 italic">
-            Winner determined by total Performance Ratings of purchased players
+            Qualified Champion (Minimum 15 Players Squad Rule Met)
           </p>
         </div>
       ) : (
         <div className="bg-ipl-card border border-white/5 rounded-3xl p-10 text-center mb-8 animate-fade-in">
           <Award className="w-14 h-14 text-ipl-gold/20 mx-auto mb-3" />
-          <h2 className="text-xl font-bold uppercase title-font text-white">Standings Awaiting Bids</h2>
-          <p className="text-xs text-ipl-gray mt-1 max-w-sm mx-auto">
-            Once teams start buying players, the leaderboard will calculate scores and reveal the champion.
+          <h2 className="text-xl font-bold uppercase title-font text-white">15 Players Required to Qualify</h2>
+          <p className="text-xs text-ipl-gray mt-1 max-w-md mx-auto">
+            Teams must complete a full 15-player roster to qualify for the championship. Teams with fewer than 15 players will be eliminated!
           </p>
         </div>
       )}
 
-      {/* TOP 3 PODIUM (only if there are scored teams) */}
+      {/* TOP 3 PODIUM */}
       {top3.length >= 3 && top3[0].squadStrength > 0 && (
         <div className="grid grid-cols-3 gap-3 mb-8">
           {/* 2nd Place */}
@@ -115,16 +116,23 @@ export default function Leaderboard() {
 
       {/* FULL STANDINGS */}
       <div className="bg-ipl-card border border-white/5 rounded-2xl p-5">
-        <h3 className="text-base font-black title-font uppercase text-ipl-goldLight mb-5 flex items-center gap-2 border-b border-white/5 pb-3">
-          <Star className="w-4 h-4" />
-          Final Standings
+        <h3 className="text-base font-black title-font uppercase text-ipl-goldLight mb-5 flex items-center justify-between border-b border-white/5 pb-3">
+          <span className="flex items-center gap-2">
+            <Star className="w-4 h-4" />
+            Final Standings
+          </span>
+          <span className="text-[10px] text-ipl-gray font-normal normal-case">
+            15 Players Required for Qualification
+          </span>
         </h3>
 
         <div className="space-y-3">
           {rankedTeams.map((team, index) => {
             const isExpanded = expandedTeamId === team._id;
             const { batting, bowling, allRounder } = calculateRoleStrengths(team.squad || []);
-            const isWinner = index === 0 && team.squadStrength > 0;
+            const squadCount = team.squad?.length || 0;
+            const isDisqualified = squadCount < 15;
+            const isWinner = index === 0 && !isDisqualified && team.squadStrength > 0;
 
             return (
               <div 
@@ -132,7 +140,9 @@ export default function Leaderboard() {
                 className={`border rounded-2xl p-4 transition-all duration-300 animate-fade-in ${
                   isWinner 
                     ? 'bg-ipl-gold/5 border-ipl-gold/30 shadow-gold-glow' 
-                    : 'bg-ipl-dark/30 border-white/5 hover:border-ipl-gold/15'
+                    : isDisqualified
+                      ? 'bg-red-950/20 border-red-500/20 opacity-80'
+                      : 'bg-ipl-dark/30 border-white/5 hover:border-ipl-gold/15'
                 }`}
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
@@ -142,17 +152,26 @@ export default function Leaderboard() {
                     <span className={`text-xs font-black w-7 h-7 rounded-full flex items-center justify-center border font-mono ${
                       isWinner 
                         ? 'bg-ipl-gold text-ipl-dark border-ipl-gold' 
-                        : index === 1 ? 'bg-gray-400/20 text-gray-300 border-gray-400/30'
-                        : index === 2 ? 'bg-amber-700/20 text-amber-500 border-amber-600/30'
-                        : 'bg-white/5 text-ipl-gray border-white/10'
+                        : isDisqualified
+                          ? 'bg-red-500/20 text-red-400 border-red-500/30'
+                          : index === 1 ? 'bg-gray-400/20 text-gray-300 border-gray-400/30'
+                          : index === 2 ? 'bg-amber-700/20 text-amber-500 border-amber-600/30'
+                          : 'bg-white/5 text-ipl-gray border-white/10'
                     }`}>
                       {index + 1}
                     </span>
                     <img src={team.logo} alt="" className="w-8 h-8 rounded-full bg-ipl-dark border border-white/10" />
                     <div>
-                      <h4 className="text-sm font-bold text-white uppercase">{team.teamName}</h4>
-                      <span className="text-[9px] text-ipl-goldLight font-bold uppercase tracking-widest">
-                        {team.squad?.length || 0} players
+                      <div className="flex items-center gap-2">
+                        <h4 className="text-sm font-bold text-white uppercase">{team.teamName}</h4>
+                        {isDisqualified && (
+                          <span className="bg-red-500/20 border border-red-500/40 text-red-400 text-[8px] font-black uppercase px-2 py-0.5 rounded-full">
+                            ELIMINATED
+                          </span>
+                        )}
+                      </div>
+                      <span className={`text-[9px] font-bold uppercase tracking-widest ${isDisqualified ? 'text-red-400' : 'text-ipl-goldLight'}`}>
+                        {squadCount}/15 players {isDisqualified ? '(Incomplete)' : '✓ Qualified'}
                       </span>
                     </div>
                   </div>
@@ -160,7 +179,9 @@ export default function Leaderboard() {
                   <div className="flex items-center space-x-5 w-full md:w-auto justify-between md:justify-end border-t md:border-t-0 border-white/5 pt-3 md:pt-0">
                     <div className="text-left md:text-right">
                       <span className="text-[9px] text-ipl-gray uppercase block">Score</span>
-                      <strong className="text-lg font-black text-white font-mono">{team.squadStrength}</strong>
+                      <strong className={`text-lg font-black font-mono ${isDisqualified ? 'text-red-400/60 line-through' : 'text-white'}`}>
+                        {team.squadStrength}
+                      </strong>
                     </div>
                     <div className="text-left md:text-right">
                       <span className="text-[9px] text-ipl-gray uppercase block">Purse Left</span>
