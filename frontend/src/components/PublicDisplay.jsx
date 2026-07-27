@@ -115,24 +115,55 @@ export default function PublicDisplay() {
               
               {/* Sold/Unsold Overlay */}
               {soldAnimation && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4">
-                  <div className="text-center p-6 md:p-12 bg-ipl-dark border-4 border-emerald-500 rounded-3xl shadow-[0_0_150px_rgba(16,185,129,0.4)] animate-scale-in w-full max-w-2xl">
-                    <div className="sold-stamp text-6xl md:text-[8rem] mb-4 md:mb-8 leading-none">SOLD!</div>
-                    <div className="flex flex-col items-center gap-4">
-                      <p className="text-white text-3xl font-black animate-fade-in uppercase">{soldAnimation.playerName}</p>
-                      <p className="text-ipl-gray text-sm uppercase tracking-widest">goes to</p>
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg p-4">
+                  <div className="text-center p-8 md:p-14 bg-gradient-to-b from-ipl-dark to-ipl-darker border-4 border-emerald-500 rounded-3xl shadow-[0_0_200px_rgba(16,185,129,0.5)] animate-scale-in w-full max-w-2xl relative overflow-hidden">
+                    {/* Decorative glow rings */}
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                      <div className="w-[500px] h-[500px] rounded-full border-2 border-emerald-500/20 animate-ping" style={{animationDuration: '2s'}}></div>
+                    </div>
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                      <div className="w-[350px] h-[350px] rounded-full border border-ipl-gold/15 animate-ping" style={{animationDuration: '2.5s'}}></div>
+                    </div>
+
+                    {/* SOLD stamp */}
+                    <div className="sold-stamp text-5xl md:text-7xl mb-6 leading-none relative z-10">SOLD!</div>
+                    
+                    <div className="flex flex-col items-center gap-3 relative z-10">
+                      {/* Player name */}
+                      <p className="text-white text-2xl md:text-4xl font-black animate-fade-in uppercase tracking-wide">{soldAnimation.playerName}</p>
+                      <p className="text-ipl-gray text-xs md:text-sm uppercase tracking-[0.3em]">goes to</p>
+                      
+                      {/* TEAM LOGO — hero element */}
                       {teams.find(t => t.teamName === soldAnimation.teamName) && (
-                         <img src={teams.find(t => t.teamName === soldAnimation.teamName).logo} className="w-24 h-24 rounded-full border-4 border-emerald-500/50 shadow-lg" alt="" />
+                        <div className="relative my-4">
+                          <div className="absolute inset-0 bg-emerald-500/30 rounded-full blur-3xl scale-150 animate-pulse"></div>
+                          <img 
+                            src={teams.find(t => t.teamName === soldAnimation.teamName).logo} 
+                            className="w-32 h-32 md:w-44 md:h-44 rounded-full border-[6px] border-emerald-400/70 shadow-[0_0_60px_rgba(16,185,129,0.4)] relative z-10 bg-ipl-dark object-contain p-2" 
+                            alt={soldAnimation.teamName} 
+                          />
+                        </div>
                       )}
-                      <p className="text-white text-3xl font-bold animate-fade-in">{soldAnimation.teamName}</p>
-                      <p className="text-emerald-400 text-5xl md:text-6xl font-black font-mono animate-fade-in mt-2 border-t border-white/10 pt-6">{soldAnimation.price}</p>
+                      
+                      {/* Team name */}
+                      <p className="text-white text-2xl md:text-3xl font-black animate-fade-in uppercase tracking-wider">{soldAnimation.teamName}</p>
+                      
+                      {/* Price */}
+                      <div className="border-t-2 border-emerald-500/30 pt-4 mt-2 w-full max-w-xs">
+                        <p className="text-emerald-400 text-4xl md:text-6xl font-black font-mono animate-fade-in">{soldAnimation.price}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               )}
               {unsoldAnimation && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4">
-                  <div className="unsold-stamp text-5xl md:text-[8rem]">UNSOLD</div>
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg p-4">
+                  <div className="text-center p-8 md:p-14 bg-gradient-to-b from-ipl-dark to-ipl-darker border-4 border-red-500 rounded-3xl shadow-[0_0_150px_rgba(239,68,68,0.3)] animate-scale-in w-full max-w-lg">
+                    <div className="unsold-stamp text-5xl md:text-[7rem] mb-4">UNSOLD</div>
+                    {unsoldAnimation.playerName && (
+                      <p className="text-white/60 text-lg font-bold uppercase mt-4">{unsoldAnimation.playerName}</p>
+                    )}
+                  </div>
                 </div>
               )}
 

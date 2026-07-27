@@ -739,17 +739,110 @@ const startTimer = (io) => {
         io.to('general').emit('auction:timer', { timerRemaining: state.timerRemaining });
       } else {
         clearInterval(timerInterval);
-        state.status = 'paused';
-        await dataLayer.saveAuctionState(state);
+        timerInterval = null;
 
-        const updatedState = await dataLayer.getFullAuctionState();
-        io.to('general').emit('auction:state', updatedState);
-        broadcastPlayerRefresh(io);
-        io.to('general').emit('auction:timeup', { message: 'Bidding time is up!' });
-        io.to('general').emit('auction:log', {
-          type: 'warning',
-          message: 'Countdown timer has ended! Awaiting administrator decision.'
-        });
+        // Auto-sell or auto-unsold when timer expires
+        if (state.leadingTeam) {
+          // === AUTO-SELL to the leading bidder ===
+          const currentPlayerId = state.currentPlayer;
+          const leadingTeamId = state.leadingTeam;
+
+          const player = await dataLayer.findPlayerById(currentPlayerId);
+          const team = await dataLayer.findTeamById(leadingTeamId);
+
+          if (player && team) {
+            const finalPrice = state.currentBid;
+
+            // Update player
+            player.status = 'sold';
+            player.soldPrice = finalPrice;
+            player.buyerTeam = team._id;
+            await dataLayer.savePlayer(player);
+
+            // Update team
+            if (!team.squad) team.squad = [];
+            team.squad.push(player._id);
+            team.remainingPurse -= finalPrice;
+
+            // Recalculate analytics
+            const populatedSquad = await dataLayer.getPopulatedSquad(team.squad);
+            let squadStrength = 0, totalRating = 0;
+            let batters = 0, bowlers = 0, allRounders = 0, wicketKeepers = 0;
+            populatedSquad.forEach((p) => {
+              squadStrength += p.performanceRating;
+              totalRating += p.performanceRating;
+              if (p.role === 'Batter') batters++;
+              else if (p.role === 'Bowler') bowlers++;
+              else if (p.role === 'All-Rounder') allRounders++;
+              else if (p.role === 'Wicket Keeper') wicketKeepers++;
+            });
+
+            team.squadStrength = squadStrength;
+            team.avgRating = populatedSquad.length > 0 ? Number((totalRating / populatedSquad.length).toFixed(1)) : 0;
+            team.roleCounts = { batters, bowlers, allRounders, wicketKeepers };
+            team.highestPurchase = Math.max(team.highestPurchase || 0, finalPrice);
+            team.cheapestPurchase = (team.cheapestPurchase === 0 || !team.cheapestPurchase) ? finalPrice : Math.min(team.cheapestPurchase, finalPrice);
+
+            await dataLayer.saveTeam(team);
+
+            // Reset auction state
+            state.currentPlayer = null;
+            state.status = 'idle';
+            state.currentBid = 0;
+            state.leadingTeam = null;
+            state.timerRemaining = state.timerDuration || 60;
+            await dataLayer.saveAuctionState(state);
+
+            // Notify everyone
+            const updatedState = await dataLayer.getFullAuctionState();
+            const updatedTeams = await dataLayer.getAllTeamsPopulated();
+
+            io.to('general').emit('auction:state', updatedState);
+            io.to('general').emit('teams:update', updatedTeams);
+            broadcastPlayerRefresh(io);
+
+            io.to(`team:${team._id}`).emit('team:notification', {
+              type: 'success',
+              message: `Congratulations! You purchased ${player.name} for ₹${(finalPrice / 10000000).toFixed(2)} Cr!`
+            });
+
+            io.to('general').emit('auction:log', {
+              type: 'success',
+              message: `SOLD! ${player.name} is sold to ${team.teamName} for ₹${(finalPrice / 10000000).toFixed(2)} Cr.`
+            });
+
+            io.to('general').emit('auction:timeup', { message: `Time's up! ${player.name} SOLD to ${team.teamName}!` });
+          }
+        } else {
+          // === AUTO-UNSOLD — no bids were placed ===
+          const currentPlayerId = state.currentPlayer;
+          const player = await dataLayer.findPlayerById(currentPlayerId);
+
+          if (player) {
+            player.status = 'unsold';
+            await dataLayer.savePlayer(player);
+          }
+
+          state.currentPlayer = null;
+          state.status = 'idle';
+          state.currentBid = 0;
+          state.leadingTeam = null;
+          state.timerRemaining = state.timerDuration || 60;
+          await dataLayer.saveAuctionState(state);
+
+          const updatedState = await dataLayer.getFullAuctionState();
+          io.to('general').emit('auction:state', updatedState);
+          broadcastPlayerRefresh(io);
+
+          if (player) {
+            io.to('general').emit('auction:log', {
+              type: 'info',
+              message: `Player ${player.name} went UNSOLD. No bids received.`
+            });
+          }
+
+          io.to('general').emit('auction:timeup', { message: 'Time\'s up! No bids — player goes UNSOLD.' });
+        }
       }
     } catch (err) {
       console.error('Timer tick error:', err.message);
