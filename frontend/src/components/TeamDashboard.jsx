@@ -188,9 +188,9 @@ export default function TeamDashboard() {
                   
                   {/* Sold/Unsold Overlay */}
                   {soldAnimation && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md">
-                      <div className="text-center p-12 bg-ipl-dark border-4 border-emerald-500 rounded-3xl shadow-[0_0_150px_rgba(16,185,129,0.4)] animate-scale-in">
-                        <div className="sold-stamp text-7xl md:text-[8rem] mb-8 leading-none">SOLD!</div>
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4">
+                      <div className="text-center p-6 md:p-12 bg-ipl-dark border-4 border-emerald-500 rounded-3xl shadow-[0_0_150px_rgba(16,185,129,0.4)] animate-scale-in w-full max-w-lg">
+                        <div className="sold-stamp text-6xl md:text-[8rem] mb-4 md:mb-8 leading-none">SOLD!</div>
                         <div className="flex flex-col items-center gap-4">
                           <p className="text-white text-3xl font-black animate-fade-in uppercase">{soldAnimation.playerName}</p>
                           <p className="text-ipl-gray text-sm uppercase tracking-widest">goes to</p>
@@ -204,8 +204,8 @@ export default function TeamDashboard() {
                     </div>
                   )}
                   {unsoldAnimation && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md">
-                      <div className="unsold-stamp text-6xl md:text-[8rem]">UNSOLD</div>
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4">
+                      <div className="unsold-stamp text-5xl md:text-[8rem]">UNSOLD</div>
                     </div>
                   )}
                   
@@ -328,12 +328,12 @@ export default function TeamDashboard() {
                         />
                       </div>
                       
-                      <div className="flex gap-2 pt-1">
+                      <div className="flex flex-col sm:flex-row gap-2 pt-1">
                         <input
                           type="number"
                           step="0.1"
                           placeholder="Custom Amount (in Cr)"
-                          className="flex-1 bg-ipl-dark/50 border border-white/10 rounded-xl px-3 py-2 text-xs text-white font-bold placeholder-white/30 focus:outline-none focus:border-ipl-gold/50"
+                          className="w-full sm:flex-1 bg-ipl-dark/50 border border-white/10 rounded-xl px-3 py-2 text-xs text-white font-bold placeholder-white/30 focus:outline-none focus:border-ipl-gold/50"
                           id="customBidInput"
                         />
                         <button
@@ -348,7 +348,7 @@ export default function TeamDashboard() {
                             }
                           }}
                           disabled={!isBiddingActive || isTeamLeading || bidCooldown}
-                          className="bg-ipl-gold/10 border border-ipl-gold/30 text-ipl-goldLight hover:bg-ipl-gold hover:text-ipl-dark px-4 py-2 rounded-xl text-xs font-black disabled:opacity-20 transition-all duration-200"
+                          className="w-full sm:w-auto bg-ipl-gold/10 border border-ipl-gold/30 text-ipl-goldLight hover:bg-ipl-gold hover:text-ipl-dark px-4 py-2 rounded-xl text-xs font-black disabled:opacity-20 transition-all duration-200"
                         >
                           Bid Custom
                         </button>

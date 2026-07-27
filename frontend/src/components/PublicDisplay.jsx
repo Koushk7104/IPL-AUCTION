@@ -115,9 +115,9 @@ export default function PublicDisplay() {
               
               {/* Sold/Unsold Overlay */}
               {soldAnimation && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md">
-                  <div className="text-center p-12 bg-ipl-dark border-4 border-emerald-500 rounded-3xl shadow-[0_0_150px_rgba(16,185,129,0.4)] animate-scale-in">
-                    <div className="sold-stamp text-7xl md:text-[8rem] mb-8 leading-none">SOLD!</div>
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4">
+                  <div className="text-center p-6 md:p-12 bg-ipl-dark border-4 border-emerald-500 rounded-3xl shadow-[0_0_150px_rgba(16,185,129,0.4)] animate-scale-in w-full max-w-2xl">
+                    <div className="sold-stamp text-6xl md:text-[8rem] mb-4 md:mb-8 leading-none">SOLD!</div>
                     <div className="flex flex-col items-center gap-4">
                       <p className="text-white text-3xl font-black animate-fade-in uppercase">{soldAnimation.playerName}</p>
                       <p className="text-ipl-gray text-sm uppercase tracking-widest">goes to</p>
@@ -125,14 +125,14 @@ export default function PublicDisplay() {
                          <img src={teams.find(t => t.teamName === soldAnimation.teamName).logo} className="w-24 h-24 rounded-full border-4 border-emerald-500/50 shadow-lg" alt="" />
                       )}
                       <p className="text-white text-3xl font-bold animate-fade-in">{soldAnimation.teamName}</p>
-                      <p className="text-emerald-400 text-6xl font-black font-mono animate-fade-in mt-2 border-t border-white/10 pt-6">{soldAnimation.price}</p>
+                      <p className="text-emerald-400 text-5xl md:text-6xl font-black font-mono animate-fade-in mt-2 border-t border-white/10 pt-6">{soldAnimation.price}</p>
                     </div>
                   </div>
                 </div>
               )}
               {unsoldAnimation && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md">
-                  <div className="unsold-stamp text-6xl md:text-[8rem]">UNSOLD</div>
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4">
+                  <div className="unsold-stamp text-5xl md:text-[8rem]">UNSOLD</div>
                 </div>
               )}
 
