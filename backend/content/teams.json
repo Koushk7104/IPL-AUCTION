@@ -4,8 +4,8 @@
     "teamName": "Mumbai Indians",
     "logo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
     "espnId": "4346",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -47,8 +47,8 @@
     "teamName": "Chennai Super Kings",
     "logo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
     "espnId": "4343",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -87,8 +87,8 @@
     "teamName": "Delhi Capitals",
     "logo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
     "espnId": "4347",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -133,8 +133,8 @@
     "teamName": "Kolkata Knight Riders",
     "logo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
     "espnId": "4341",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -170,8 +170,8 @@
     "teamName": "Punjab Kings",
     "logo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
     "espnId": "4342",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -208,8 +208,8 @@
     "teamName": "Rajasthan Royals",
     "logo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
     "espnId": "4345",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -247,8 +247,8 @@
     "teamName": "Royal Challengers Bengaluru",
     "logo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
     "espnId": "4340",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -289,8 +289,8 @@
     "teamName": "Sunrisers Hyderabad",
     "logo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
     "espnId": "5143",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -324,8 +324,8 @@
     "teamName": "Lucknow Super Giants",
     "logo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
     "espnId": "6903",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -365,8 +365,8 @@
     "teamName": "Gujarat Titans",
     "logo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
     "espnId": "6904",
-    "initialPurse": 1250000000,
-    "remainingPurse": 1250000000,
+    "initialPurse": 2100000000,
+    "remainingPurse": 2100000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -403,3 +403,4 @@
     ]
   }
 ]
+
