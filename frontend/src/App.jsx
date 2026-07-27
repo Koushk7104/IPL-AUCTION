@@ -50,7 +50,7 @@ function AppContent() {
                   </span>
                 )}
               </div>
-              <span className="text-[9px] text-ipl-goldLight font-bold uppercase tracking-[0.2em] block -mt-0.5">
+              <span className="hidden sm:block text-[9px] text-ipl-goldLight font-bold uppercase tracking-[0.2em] -mt-0.5">
                 Mega Auction 2026
               </span>
             </div>

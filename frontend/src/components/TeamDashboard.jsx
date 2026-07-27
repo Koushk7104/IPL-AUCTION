@@ -126,21 +126,21 @@ export default function TeamDashboard() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
         
         {/* Team Profile */}
-        <div className="bg-ipl-card border border-ipl-gold/20 rounded-2xl p-3.5 flex items-center space-x-3 shadow-gold-glow animate-fade-in">
-          <img src={user.logo} alt={user.teamName} className="w-12 h-12 rounded-full bg-ipl-dark border border-white/10" />
-          <div>
-            <h1 className="text-sm font-black text-white leading-tight uppercase truncate max-w-[130px]">{user.teamName}</h1>
+        <div className="bg-ipl-card border border-ipl-gold/20 rounded-2xl p-3.5 flex items-center space-x-3 shadow-gold-glow animate-fade-in col-span-2 md:col-span-1">
+          <img src={user.logo} alt={user.teamName} className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-ipl-dark border border-white/10 shrink-0" />
+          <div className="min-w-0 flex-1">
+            <h1 className="text-sm font-black text-white leading-tight uppercase truncate">{user.teamName}</h1>
             <span className="text-[9px] text-ipl-goldLight font-bold uppercase tracking-widest">{user.username}</span>
           </div>
         </div>
 
         {/* Purse */}
-        <div className="bg-ipl-card border border-white/5 rounded-2xl p-3.5 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+        <div className="bg-ipl-card border border-white/5 rounded-2xl p-3.5 animate-fade-in col-span-2 md:col-span-1" style={{ animationDelay: '0.1s' }}>
           <div className="flex justify-between items-center text-[10px] text-ipl-gray">
             <span>PURSE LEFT</span>
             <DollarSign className="w-3.5 h-3.5 text-ipl-gold" />
           </div>
-          <div className="text-xl font-black text-ipl-goldLight font-mono mt-1">{formatPurse(user.remainingPurse)}</div>
+          <div className="text-xl md:text-2xl font-black text-ipl-goldLight font-mono mt-1">{formatPurse(user.remainingPurse)}</div>
           <div className="text-[8px] text-white/30 mt-0.5">of {formatPurse(user.initialPurse)}</div>
         </div>
 
@@ -376,7 +376,7 @@ export default function TeamDashboard() {
 
           {/* Squad Roster */}
           <div className="bg-ipl-card border border-white/5 rounded-2xl p-5">
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
               <h2 className="text-sm font-bold uppercase title-font text-ipl-goldLight flex items-center gap-2">
                 <Award className="w-4 h-4" />
                 Your Squad ({user.squad?.length || 0})

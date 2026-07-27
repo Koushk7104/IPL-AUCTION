@@ -18,6 +18,17 @@ const startServer = async () => {
 
   if (!app.locals.demoMode) {
     await ensureSeedData();
+    
+    // Auto-migrate any existing teams that were seeded with 125Cr
+    const Team = require('./models/Team');
+    try {
+      await Team.updateMany(
+        { initialPurse: 1250000000 }, 
+        { $set: { initialPurse: 2100000000 }, $inc: { remainingPurse: 850000000 } }
+      );
+    } catch (e) {
+      console.log('Migration failed', e);
+    }
   }
 
   // Middlewares
