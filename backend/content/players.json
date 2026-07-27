@@ -24,7 +24,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 95,
-    "basePrice": 200000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -34,7 +34,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -52,7 +52,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -62,7 +62,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -80,7 +80,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -90,7 +90,7 @@
     "country": "India",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -108,7 +108,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -118,7 +118,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -136,7 +136,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -146,7 +146,7 @@
     "country": "India",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 14,
@@ -164,7 +164,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 77,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -174,7 +174,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -192,7 +192,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -202,7 +202,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -220,7 +220,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -230,7 +230,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -248,7 +248,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -258,7 +258,7 @@
     "country": "India",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 14,
@@ -276,7 +276,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 82,
-    "basePrice": 75000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -286,7 +286,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -304,7 +304,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -314,7 +314,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -332,7 +332,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -342,7 +342,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium",
     "matches": 0,
@@ -360,7 +360,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -370,7 +370,7 @@
     "country": "India",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -388,7 +388,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -398,7 +398,7 @@
     "country": "India",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 6,
@@ -416,7 +416,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 74,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -444,7 +444,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -454,7 +454,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -472,7 +472,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -482,7 +482,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -500,7 +500,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -510,7 +510,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -528,7 +528,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -538,7 +538,7 @@
     "country": "India",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -556,7 +556,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -566,7 +566,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -584,7 +584,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -594,7 +594,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -612,7 +612,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -622,7 +622,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -640,7 +640,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -650,7 +650,7 @@
     "country": "India",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -668,7 +668,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -678,7 +678,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -696,7 +696,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -706,7 +706,7 @@
     "country": "India",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -724,7 +724,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -734,7 +734,7 @@
     "country": "India",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "Na",
     "matches": 13,
@@ -752,7 +752,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 91,
-    "basePrice": 150000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -762,7 +762,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -780,7 +780,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -790,7 +790,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -808,7 +808,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -818,7 +818,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -836,7 +836,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -846,7 +846,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -864,7 +864,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -874,7 +874,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -892,7 +892,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -902,7 +902,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -920,7 +920,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -930,7 +930,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -948,7 +948,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -958,7 +958,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -976,7 +976,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -986,7 +986,7 @@
     "country": "India",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm wrist-spin",
     "matches": 11,
@@ -1004,7 +1004,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 74,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1014,7 +1014,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -1032,7 +1032,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1042,7 +1042,7 @@
     "country": "India",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -1060,7 +1060,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1070,7 +1070,7 @@
     "country": "India",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -1088,7 +1088,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1098,7 +1098,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -1116,7 +1116,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1126,7 +1126,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -1144,7 +1144,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1154,7 +1154,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -1172,7 +1172,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1182,7 +1182,7 @@
     "country": "India",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 14,
@@ -1200,7 +1200,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 83,
-    "basePrice": 75000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1210,7 +1210,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -1228,7 +1228,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1238,7 +1238,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -1256,7 +1256,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1266,7 +1266,7 @@
     "country": "India",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -1284,7 +1284,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1294,7 +1294,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -1312,7 +1312,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1322,7 +1322,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -1340,7 +1340,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1350,7 +1350,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -1368,7 +1368,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1396,7 +1396,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1406,7 +1406,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -1424,7 +1424,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1452,7 +1452,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 74,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1462,7 +1462,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -1480,7 +1480,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1508,7 +1508,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 79,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1518,7 +1518,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -1536,7 +1536,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1546,7 +1546,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm fast",
     "matches": 0,
@@ -1564,7 +1564,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1574,7 +1574,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -1592,7 +1592,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1602,7 +1602,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -1620,7 +1620,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1630,7 +1630,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -1648,7 +1648,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1658,7 +1658,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -1676,7 +1676,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1686,7 +1686,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 0,
@@ -1704,7 +1704,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1714,7 +1714,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -1732,7 +1732,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1742,7 +1742,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm wrist-spin",
     "matches": 0,
@@ -1760,7 +1760,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1770,7 +1770,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 12,
@@ -1788,7 +1788,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1798,7 +1798,7 @@
     "country": "India",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -1816,7 +1816,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1826,7 +1826,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -1844,7 +1844,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1872,7 +1872,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 90,
-    "basePrice": 150000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1882,7 +1882,7 @@
     "country": "India",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -1900,7 +1900,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1910,7 +1910,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -1928,7 +1928,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1938,7 +1938,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -1956,7 +1956,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1966,7 +1966,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -1984,7 +1984,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1994,7 +1994,7 @@
     "country": "India",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -2012,7 +2012,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2022,7 +2022,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -2040,7 +2040,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2050,7 +2050,7 @@
     "country": "India",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -2068,7 +2068,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2078,7 +2078,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -2096,7 +2096,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2124,7 +2124,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2134,7 +2134,7 @@
     "country": "India",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -2152,7 +2152,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2162,7 +2162,7 @@
     "country": "India",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -2180,7 +2180,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2190,7 +2190,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -2208,7 +2208,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2218,7 +2218,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -2236,7 +2236,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2264,7 +2264,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2274,7 +2274,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -2292,7 +2292,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2302,7 +2302,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -2320,7 +2320,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2330,7 +2330,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -2348,7 +2348,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2358,7 +2358,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -2376,7 +2376,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2386,7 +2386,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -2404,7 +2404,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2414,7 +2414,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -2432,7 +2432,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2442,7 +2442,7 @@
     "country": "India",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 14,
@@ -2460,7 +2460,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 99,
-    "basePrice": 200000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2470,7 +2470,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -2488,7 +2488,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2498,7 +2498,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -2516,7 +2516,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2526,7 +2526,7 @@
     "country": "India",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -2544,7 +2544,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2554,7 +2554,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -2572,7 +2572,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2582,7 +2582,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -2600,7 +2600,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2610,7 +2610,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -2628,7 +2628,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2638,7 +2638,7 @@
     "country": "India",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 14,
@@ -2656,7 +2656,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 82,
-    "basePrice": 75000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2666,7 +2666,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -2684,7 +2684,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2694,7 +2694,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 0,
@@ -2712,7 +2712,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2722,7 +2722,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -2740,7 +2740,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2750,7 +2750,7 @@
     "country": "India",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 12,
@@ -2768,7 +2768,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 84,
-    "basePrice": 75000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2796,7 +2796,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 82,
-    "basePrice": 75000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2806,7 +2806,7 @@
     "country": "India",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm fast",
     "matches": 14,
@@ -2824,7 +2824,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 62,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2834,7 +2834,7 @@
     "country": "India",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -2852,7 +2852,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2862,7 +2862,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -2880,7 +2880,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2890,7 +2890,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -2908,7 +2908,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2918,7 +2918,7 @@
     "country": "India",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -2936,7 +2936,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2946,7 +2946,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -2964,7 +2964,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2974,7 +2974,7 @@
     "country": "India",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 14,
@@ -2992,7 +2992,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 89,
-    "basePrice": 100000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3002,7 +3002,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium",
     "matches": 0,
@@ -3020,7 +3020,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3030,7 +3030,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -3048,7 +3048,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3058,7 +3058,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -3076,7 +3076,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3086,7 +3086,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -3104,7 +3104,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3114,7 +3114,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -3132,7 +3132,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3142,7 +3142,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -3160,7 +3160,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3170,7 +3170,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -3188,7 +3188,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3198,7 +3198,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -3216,7 +3216,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3226,7 +3226,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -3244,7 +3244,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3254,7 +3254,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -3272,7 +3272,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3282,7 +3282,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -3300,7 +3300,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3310,7 +3310,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 0,
@@ -3328,7 +3328,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3338,7 +3338,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -3356,7 +3356,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3384,7 +3384,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3394,7 +3394,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -3412,7 +3412,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3422,7 +3422,7 @@
     "country": "India",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 14,
@@ -3440,7 +3440,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 93,
-    "basePrice": 150000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3450,7 +3450,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -3468,7 +3468,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3478,7 +3478,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -3496,7 +3496,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3506,7 +3506,7 @@
     "country": "India",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 14,
@@ -3524,7 +3524,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 70,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3534,7 +3534,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -3552,7 +3552,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3562,7 +3562,7 @@
     "country": "India",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -3580,7 +3580,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3590,7 +3590,7 @@
     "country": "India",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -3608,7 +3608,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3618,7 +3618,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -3636,7 +3636,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3646,7 +3646,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -3664,7 +3664,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3674,7 +3674,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -3692,7 +3692,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3702,7 +3702,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -3720,7 +3720,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3730,7 +3730,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 14,
@@ -3748,7 +3748,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 64,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3758,7 +3758,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -3776,7 +3776,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3786,7 +3786,7 @@
     "country": "India",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 13,
@@ -3804,7 +3804,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 99,
-    "basePrice": 200000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3814,7 +3814,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -3832,7 +3832,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3842,7 +3842,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -3860,7 +3860,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3888,7 +3888,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3898,7 +3898,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -3916,7 +3916,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3926,7 +3926,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -3944,7 +3944,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3954,7 +3954,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -3972,7 +3972,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3982,7 +3982,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -4000,7 +4000,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4010,7 +4010,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -4028,7 +4028,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4038,7 +4038,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -4056,7 +4056,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4066,7 +4066,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium",
     "matches": 0,
@@ -4084,7 +4084,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4094,7 +4094,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -4112,7 +4112,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4122,7 +4122,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -4140,7 +4140,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4150,7 +4150,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -4168,7 +4168,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4178,7 +4178,7 @@
     "country": "India",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -4196,7 +4196,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4224,7 +4224,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 75,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4234,7 +4234,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -4252,7 +4252,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4262,7 +4262,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 0,
@@ -4280,7 +4280,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4290,7 +4290,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -4308,7 +4308,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4336,7 +4336,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4346,7 +4346,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -4364,7 +4364,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4374,7 +4374,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -4392,7 +4392,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4420,7 +4420,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 74,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4430,7 +4430,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -4448,7 +4448,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4458,7 +4458,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -4476,7 +4476,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4486,7 +4486,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -4504,7 +4504,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4514,7 +4514,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -4532,7 +4532,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4542,7 +4542,7 @@
     "country": "India",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 14,
@@ -4560,7 +4560,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 73,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4570,7 +4570,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -4588,7 +4588,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4598,7 +4598,7 @@
     "country": "India",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -4616,7 +4616,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4626,7 +4626,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 0,
@@ -4644,7 +4644,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4654,7 +4654,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -4672,7 +4672,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4682,7 +4682,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -4700,7 +4700,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4710,7 +4710,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -4728,7 +4728,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4738,7 +4738,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -4756,7 +4756,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4766,7 +4766,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -4784,7 +4784,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4794,7 +4794,7 @@
     "country": "India",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 7,
@@ -4812,7 +4812,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4822,7 +4822,7 @@
     "country": "India",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 14,
@@ -4840,7 +4840,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4850,7 +4850,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -4868,7 +4868,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4878,7 +4878,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -4896,7 +4896,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4906,7 +4906,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -4924,7 +4924,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4934,7 +4934,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -4952,7 +4952,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4962,7 +4962,7 @@
     "country": "India",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -4980,7 +4980,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4990,7 +4990,7 @@
     "country": "India",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -5008,7 +5008,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5018,7 +5018,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -5036,7 +5036,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5046,7 +5046,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -5064,7 +5064,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5074,7 +5074,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -5092,7 +5092,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5102,7 +5102,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -5120,7 +5120,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5130,7 +5130,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -5148,7 +5148,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5158,7 +5158,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -5176,7 +5176,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5186,7 +5186,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -5204,7 +5204,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5214,7 +5214,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 15,
@@ -5232,7 +5232,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 98,
-    "basePrice": 200000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5242,7 +5242,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -5260,7 +5260,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5270,7 +5270,7 @@
     "country": "Unknown",
     "iplTeam": "Chennai Super Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -5288,7 +5288,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5298,7 +5298,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -5316,7 +5316,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5326,7 +5326,7 @@
     "country": "India",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 15,
@@ -5344,7 +5344,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5354,7 +5354,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -5372,7 +5372,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5400,7 +5400,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 75,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5410,7 +5410,7 @@
     "country": "India",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 15,
@@ -5428,7 +5428,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 75,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5438,7 +5438,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -5456,7 +5456,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5466,7 +5466,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -5484,7 +5484,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5512,7 +5512,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5540,7 +5540,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 77,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5550,7 +5550,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -5568,7 +5568,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5578,7 +5578,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -5596,7 +5596,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5606,7 +5606,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -5624,7 +5624,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5634,7 +5634,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -5652,7 +5652,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5662,7 +5662,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -5680,7 +5680,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5708,7 +5708,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5718,7 +5718,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -5736,7 +5736,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5746,7 +5746,7 @@
     "country": "Unknown",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -5764,7 +5764,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5774,7 +5774,7 @@
     "country": "India",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 11,
@@ -5792,7 +5792,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 70,
-    "basePrice": 50000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5802,7 +5802,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -5820,7 +5820,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5830,7 +5830,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -5848,7 +5848,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5858,7 +5858,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -5876,7 +5876,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5904,7 +5904,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5914,7 +5914,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -5932,7 +5932,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5942,7 +5942,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "Na",
     "matches": 0,
@@ -5960,7 +5960,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5970,7 +5970,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -5988,7 +5988,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5998,7 +5998,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -6016,7 +6016,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6026,7 +6026,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 0,
@@ -6044,7 +6044,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6054,7 +6054,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -6072,7 +6072,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6082,7 +6082,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -6100,7 +6100,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6110,7 +6110,7 @@
     "country": "India",
     "iplTeam": "Kolkata Knight Riders",
     "teamLogo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast-medium",
     "matches": 13,
@@ -6128,7 +6128,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 75000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6138,7 +6138,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -6156,7 +6156,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6166,7 +6166,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -6184,7 +6184,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6194,7 +6194,7 @@
     "country": "India",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -6212,7 +6212,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6240,7 +6240,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 99,
-    "basePrice": 200000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6250,7 +6250,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -6268,7 +6268,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6278,7 +6278,7 @@
     "country": "India",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 10,
@@ -6296,7 +6296,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6306,7 +6306,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -6324,7 +6324,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6352,7 +6352,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6362,7 +6362,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -6380,7 +6380,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6390,7 +6390,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 0,
@@ -6408,7 +6408,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6418,7 +6418,7 @@
     "country": "India",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -6436,7 +6436,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6446,7 +6446,7 @@
     "country": "India",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "legbreak googly",
     "matches": 0,
@@ -6464,7 +6464,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6474,7 +6474,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -6492,7 +6492,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6502,7 +6502,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -6520,7 +6520,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6530,7 +6530,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -6548,7 +6548,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6558,7 +6558,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 0,
@@ -6576,7 +6576,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6586,7 +6586,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -6604,7 +6604,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6614,7 +6614,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -6632,7 +6632,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6642,7 +6642,7 @@
     "country": "India",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 15,
@@ -6660,7 +6660,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6688,7 +6688,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6698,7 +6698,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 0,
@@ -6716,7 +6716,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6726,7 +6726,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -6744,7 +6744,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6754,7 +6754,7 @@
     "country": "Unknown",
     "iplTeam": "Rajasthan Royals",
     "teamLogo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm fast-medium",
     "matches": 0,
@@ -6772,7 +6772,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6800,7 +6800,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 92,
-    "basePrice": 150000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6810,7 +6810,7 @@
     "country": "Unknown",
     "iplTeam": "Punjab Kings",
     "teamLogo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm medium-fast",
     "matches": 0,
@@ -6828,7 +6828,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6838,7 +6838,7 @@
     "country": "India",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Wicket Keeper",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 15,
@@ -6856,7 +6856,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 93,
-    "basePrice": 150000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6866,7 +6866,7 @@
     "country": "Unknown",
     "iplTeam": "Royal Challengers Bengaluru",
     "teamLogo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -6884,7 +6884,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6894,7 +6894,7 @@
     "country": "Unknown",
     "iplTeam": "Mumbai Indians",
     "teamLogo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -6912,7 +6912,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6922,7 +6922,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -6940,7 +6940,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6950,7 +6950,7 @@
     "country": "Unknown",
     "iplTeam": "Delhi Capitals",
     "teamLogo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "left-arm medium",
     "matches": 0,
@@ -6968,7 +6968,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6978,7 +6978,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium-fast",
     "matches": 0,
@@ -6996,7 +6996,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7006,7 +7006,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -7024,7 +7024,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7034,7 +7034,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm medium",
     "matches": 0,
@@ -7052,7 +7052,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7062,7 +7062,7 @@
     "country": "Unknown",
     "iplTeam": "Lucknow Super Giants",
     "teamLogo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "slow left-arm orthodox",
     "matches": 0,
@@ -7080,7 +7080,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7090,7 +7090,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -7108,7 +7108,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7136,7 +7136,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7146,7 +7146,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm fast",
     "matches": 0,
@@ -7164,7 +7164,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7174,7 +7174,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "left-arm medium",
     "matches": 0,
@@ -7192,7 +7192,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7202,7 +7202,7 @@
     "country": "Unknown",
     "iplTeam": "Sunrisers Hyderabad",
     "teamLogo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -7220,7 +7220,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7230,7 +7230,7 @@
     "country": "Unknown",
     "iplTeam": "Gujarat Titans",
     "teamLogo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
-    "role": "Batter",
+    "role": "All-Rounder",
     "battingStyle": "left-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -7248,7 +7248,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7258,7 +7258,7 @@
     "country": "India",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "right-arm offbreak",
     "matches": 0,
@@ -7276,7 +7276,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -7286,7 +7286,7 @@
     "country": "Unknown",
     "iplTeam": "Uncapped",
     "teamLogo": "",
-    "role": "Batter",
+    "role": "Bowler",
     "battingStyle": "right-hand bat",
     "bowlingStyle": "legbreak",
     "matches": 0,
@@ -7304,7 +7304,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 60,
-    "basePrice": 30000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   }
 ]
