@@ -165,8 +165,8 @@ const buildTeamRecords = (rows) => {
       teamName,
       logo: row.url,
       espnId: row.espn_id,
-      initialPurse: 1250000000,
-      remainingPurse: 1250000000,
+      initialPurse: 2100000000,
+      remainingPurse: 2100000000,
       roleCounts: {
         batters: 0,
         bowlers: 0,

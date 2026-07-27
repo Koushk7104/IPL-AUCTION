@@ -27,8 +27,8 @@ export const SocketProvider = ({ children }) => {
     status: 'idle',
     currentBid: 0,
     leadingTeam: null,
-    timerRemaining: 120,
-    timerDuration: 120
+    timerRemaining: 60,
+    timerDuration: 60
   });
   const [teams, setTeams] = useState([]);
   const [bidHistory, setBidHistory] = useState([]);

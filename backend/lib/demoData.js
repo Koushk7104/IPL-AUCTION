@@ -181,8 +181,8 @@ const demoAuctionState = {
   status: 'idle',
   currentBid: 0,
   leadingTeam: null,
-  timerRemaining: 360,
-  timerDuration: 360
+  timerRemaining: 60,
+  timerDuration: 60
 };
 
 const initDemoTeams = async () => {

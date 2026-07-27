@@ -250,7 +250,7 @@ const initSocket = (server, demoMode = false) => {
         state.status = 'idle';
         state.currentBid = 0;
         state.leadingTeam = null;
-        state.timerRemaining = state.timerDuration || 360;
+        state.timerRemaining = state.timerDuration || 60;
         await dataLayer.saveAuctionState(state);
 
         // Delete any old bid history
@@ -392,7 +392,7 @@ const initSocket = (server, demoMode = false) => {
         state.status = 'idle';
         state.currentBid = 0;
         state.leadingTeam = null;
-        state.timerRemaining = state.timerDuration || 360;
+        state.timerRemaining = state.timerDuration || 60;
         await dataLayer.saveAuctionState(state);
 
         // Notify
@@ -445,7 +445,7 @@ const initSocket = (server, demoMode = false) => {
         state.status = 'idle';
         state.currentBid = 0;
         state.leadingTeam = null;
-        state.timerRemaining = state.timerDuration || 360;
+        state.timerRemaining = state.timerDuration || 60;
         await dataLayer.saveAuctionState(state);
 
         const updatedState = await dataLayer.getFullAuctionState();
@@ -488,7 +488,7 @@ const initSocket = (server, demoMode = false) => {
         state.status = 'idle';
         state.currentBid = 0;
         state.leadingTeam = null;
-        state.timerRemaining = state.timerDuration || 360;
+        state.timerRemaining = state.timerDuration || 60;
         await dataLayer.saveAuctionState(state);
 
         const updatedState = await dataLayer.getFullAuctionState();
@@ -591,13 +591,13 @@ const initSocket = (server, demoMode = false) => {
           demoData.demoAuctionState.status = 'idle';
           demoData.demoAuctionState.currentBid = 0;
           demoData.demoAuctionState.leadingTeam = null;
-          demoData.demoAuctionState.timerRemaining = 360;
-          demoData.demoAuctionState.timerDuration = 360;
+          demoData.demoAuctionState.timerRemaining = 60;
+          demoData.demoAuctionState.timerDuration = 60;
         } else {
           // If in prod mode (mongodb), could drop collections and re-seed, or just clean state
           await Player.updateMany({}, { status: 'pending', currentBid: 0, leadingTeam: null, soldPrice: null, buyerTeam: null });
           await Team.updateMany({}, { remainingPurse: 2100000000, squad: [], squadStrength: 0, avgRating: 0, roleCounts: { batters: 0, bowlers: 0, allRounders: 0, wicketKeepers: 0 }, highestPurchase: 0, cheapestPurchase: 0 });
-          await AuctionState.updateMany({}, { currentPlayer: null, status: 'idle', currentBid: 0, leadingTeam: null, timerRemaining: 360, timerDuration: 360 });
+          await AuctionState.updateMany({}, { currentPlayer: null, status: 'idle', currentBid: 0, leadingTeam: null, timerRemaining: 60, timerDuration: 60 });
           await BidHistory.deleteMany({});
         }
 

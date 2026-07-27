@@ -22,11 +22,11 @@ const TeamSchema = new mongoose.Schema({
   },
   initialPurse: {
     type: Number,
-    default: 1250000000 // 125 Crore in Rupees
+    default: 2100000000 // 210 Crore in Rupees
   },
   remainingPurse: {
     type: Number,
-    default: 1250000000
+    default: 2100000000
   },
   squad: [{
     type: mongoose.Schema.Types.ObjectId,
