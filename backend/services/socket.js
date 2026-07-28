@@ -64,15 +64,16 @@ const dataLayer = {
   },
 
   async findPlayerById(id) {
+    if (!id) return null;
+    const idStr = id._id ? id._id.toString() : id.toString();
     if (isDemoMode) {
-      return demoData.demoPlayers.find(p => p._id === id) || null;
+      return demoData.demoPlayers.find(p => p._id.toString() === idStr || p.id === idStr) || null;
     }
-    return await Player.findById(id);
+    return await Player.findById(idStr);
   },
 
   async savePlayer(player) {
     if (isDemoMode) {
-      // Player is already mutated in-place for demo
       player.updatedAt = new Date().toISOString();
       return;
     }
@@ -80,10 +81,12 @@ const dataLayer = {
   },
 
   async findTeamById(id) {
+    if (!id) return null;
+    const idStr = id._id ? id._id.toString() : id.toString();
     if (isDemoMode) {
-      return demoData.demoTeams.find(t => t._id === id) || null;
+      return demoData.demoTeams.find(t => t._id.toString() === idStr || t.username === idStr) || null;
     }
-    return await Team.findById(id);
+    return await Team.findById(idStr);
   },
 
   async saveTeam(team) {
