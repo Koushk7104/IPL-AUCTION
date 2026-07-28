@@ -5,10 +5,11 @@ import AdminDashboard from './components/AdminDashboard';
 import TeamDashboard from './components/TeamDashboard';
 import PublicDisplay from './components/PublicDisplay';
 import Leaderboard from './components/Leaderboard';
+import SoldOverlay from './components/SoldOverlay';
 import { LogOut, Trophy, ScreenShare, LayoutDashboard, Zap, Shield, Swords } from 'lucide-react';
 
 function AppContent() {
-  const { user, token, loading, logout, auctionStage } = useSocket();
+  const { user, token, loading, logout, auctionStage, soldAnimation, unsoldAnimation, teams } = useSocket();
   const [currentView, setCurrentView] = useState('dashboard');
 
   if (loading) {
@@ -115,6 +116,9 @@ function AppContent() {
       {isLive && (
         <div className="gold-gradient-horizontal animate-shimmer h-[2px] w-full"></div>
       )}
+
+      {/* Full-Screen Celebration Sold Overlay */}
+      <SoldOverlay soldAnimation={soldAnimation} unsoldAnimation={unsoldAnimation} teams={teams} />
 
       {/* Main View Area */}
       <main className="flex-1">
