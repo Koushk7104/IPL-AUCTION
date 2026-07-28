@@ -640,7 +640,11 @@ const initSocket = (server, demoMode = false) => {
           return socket.emit('error', 'Invalid player or team context');
         }
 
-        if (team.squad && team.squad.length >= 15) {
+        const validSquadCount = Array.isArray(team.squad) 
+          ? team.squad.filter(p => isDemoMode ? (getDemoPlayerById(p) || (typeof p === 'object' && p._id)) : p).length 
+          : 0;
+
+        if (validSquadCount >= 15) {
           return socket.emit('error', 'Squad limit reached! Your team already has 15 players.');
         }
 
