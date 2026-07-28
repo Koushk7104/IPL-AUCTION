@@ -59,8 +59,7 @@ const PlayerSchema = new mongoose.Schema({
     default: 0
   },
   leadingTeam: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Team',
+    type: mongoose.Schema.Types.Mixed,
     default: null
   },
   soldPrice: {
@@ -68,8 +67,7 @@ const PlayerSchema = new mongoose.Schema({
     default: null
   },
   buyerTeam: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Team',
+    type: mongoose.Schema.Types.Mixed,
     default: null
   }
 }, {

@@ -124,9 +124,14 @@ const dataLayer = {
     if (isDemoMode) {
       return { ...entry, createdAt: new Date().toISOString() };
     }
-    const bidLog = new BidHistory(entry);
-    await bidLog.save();
-    return bidLog;
+    try {
+      const bidLog = new BidHistory(entry);
+      await bidLog.save();
+      return bidLog;
+    } catch (e) {
+      console.error('BidHistory save warning:', e.message);
+      return { ...entry, createdAt: new Date().toISOString() };
+    }
   },
 
   async getBidHistory(playerId) {

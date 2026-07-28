@@ -29,8 +29,7 @@ const TeamSchema = new mongoose.Schema({
     default: 2100000000
   },
   squad: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Player'
+    type: mongoose.Schema.Types.Mixed
   }],
   squadStrength: {
     type: Number,

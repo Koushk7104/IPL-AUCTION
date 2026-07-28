@@ -2,8 +2,7 @@ const mongoose = require('mongoose');
 
 const AuctionStateSchema = new mongoose.Schema({
   currentPlayer: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Player',
+    type: mongoose.Schema.Types.Mixed,
     default: null
   },
   status: {
@@ -16,8 +15,7 @@ const AuctionStateSchema = new mongoose.Schema({
     default: 0
   },
   leadingTeam: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Team',
+    type: mongoose.Schema.Types.Mixed,
     default: null
   },
   timerRemaining: {

@@ -2,13 +2,11 @@ const mongoose = require('mongoose');
 
 const BidHistorySchema = new mongoose.Schema({
   player: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Player',
+    type: mongoose.Schema.Types.Mixed,
     required: true
   },
   team: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Team',
+    type: mongoose.Schema.Types.Mixed,
     required: true
   },
   bidAmount: {
