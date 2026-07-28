@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSocket } from '../context/SocketContext';
-import { DollarSign, Trophy, Sparkles, Award, User, Clock, Bell, Zap, Radio, Hand, Eye } from 'lucide-react';
+import { DollarSign, Trophy, Sparkles, Award, User, Clock, Bell, Zap, Radio, Hand } from 'lucide-react';
 import SoldOverlay from './SoldOverlay';
 
 export default function TeamDashboard() {
