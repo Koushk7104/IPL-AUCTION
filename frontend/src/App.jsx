@@ -118,7 +118,7 @@ function AppContent() {
       )}
 
       {/* Full-Screen Celebration Sold Overlay */}
-      <SoldOverlay soldAnimation={soldAnimation} unsoldAnimation={unsoldAnimation} teams={teams} />
+      <SoldOverlay soldAnimation={soldAnimation} unsoldAnimation={unsoldAnimation} teams={teams} user={user} />
 
       {/* Main View Area */}
       <main className="flex-1">
