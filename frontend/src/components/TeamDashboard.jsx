@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSocket } from '../context/SocketContext';
-import { DollarSign, Trophy, Sparkles, Award, User, Clock, Bell, Zap, Radio, Hand } from 'lucide-react';
+import { DollarSign, Trophy, Sparkles, Award, User, Clock, Bell, Zap, Radio, Hand, Eye } from 'lucide-react';
+import SoldOverlay from './SoldOverlay';
 
 export default function TeamDashboard() {
   const { 
@@ -194,38 +195,7 @@ export default function TeamDashboard() {
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-5 relative">
                   
                   {/* Sold/Unsold Overlay */}
-                  {soldAnimation && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg p-4">
-                      <div className="text-center p-6 md:p-12 bg-gradient-to-b from-ipl-dark to-ipl-darker border-4 border-emerald-500 rounded-3xl shadow-[0_0_150px_rgba(16,185,129,0.4)] animate-scale-in w-full max-w-lg relative overflow-hidden">
-                        <div className="sold-stamp text-5xl md:text-7xl mb-4 leading-none relative z-10">SOLD!</div>
-                        <div className="flex flex-col items-center gap-3 relative z-10">
-                          <p className="text-white text-xl md:text-3xl font-black animate-fade-in uppercase">{soldAnimation.playerName}</p>
-                          <p className="text-ipl-gray text-xs uppercase tracking-[0.3em]">goes to</p>
-                          {teams.find(t => t.teamName === soldAnimation.teamName) && (
-                            <div className="relative my-3">
-                              <div className="absolute inset-0 bg-emerald-500/30 rounded-full blur-3xl scale-150 animate-pulse"></div>
-                              <img 
-                                src={teams.find(t => t.teamName === soldAnimation.teamName).logo} 
-                                className="w-28 h-28 md:w-36 md:h-36 rounded-full border-[5px] border-emerald-400/70 shadow-[0_0_50px_rgba(16,185,129,0.4)] relative z-10 bg-ipl-dark object-contain p-2" 
-                                alt={soldAnimation.teamName} 
-                              />
-                            </div>
-                          )}
-                          <p className="text-white text-xl md:text-2xl font-black animate-fade-in uppercase">{soldAnimation.teamName}</p>
-                          <div className="border-t-2 border-emerald-500/30 pt-3 mt-1 w-full max-w-xs">
-                            <p className="text-emerald-400 text-3xl md:text-5xl font-black font-mono animate-fade-in">{soldAnimation.price}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                  {unsoldAnimation && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg p-4">
-                      <div className="text-center p-6 md:p-12 bg-gradient-to-b from-ipl-dark to-ipl-darker border-4 border-red-500 rounded-3xl shadow-[0_0_100px_rgba(239,68,68,0.3)] animate-scale-in w-full max-w-md">
-                        <div className="unsold-stamp text-4xl md:text-[6rem]">UNSOLD</div>
-                      </div>
-                    </div>
-                  )}
+                  <SoldOverlay soldAnimation={soldAnimation} unsoldAnimation={unsoldAnimation} teams={teams} />
                   
                   {/* Player Details (2 cols) */}
                   <div className="md:col-span-2 bg-ipl-dark/40 border border-white/5 rounded-xl p-4 flex flex-col items-center text-center player-card-reveal">

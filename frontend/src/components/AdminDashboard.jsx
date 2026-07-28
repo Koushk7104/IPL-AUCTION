@@ -6,6 +6,7 @@ import {
   Users, List, Shield, ChevronDown, ChevronUp, BarChart2,
   Gavel, Eye, Zap, AlertTriangle, Radio
 } from 'lucide-react';
+import SoldOverlay from './SoldOverlay';
 
 export default function AdminDashboard({ setGlobalView }) {
   const { 
@@ -136,20 +137,7 @@ export default function AdminDashboard({ setGlobalView }) {
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-5 animate-fade-in-up relative">
                   
                   {/* Sold/Unsold Overlay */}
-                  {soldAnimation && (
-                    <div className="sold-overlay">
-                      <div className="text-center">
-                        <div className="sold-stamp">SOLD!</div>
-                        <p className="text-white text-sm font-bold mt-3 animate-fade-in">{soldAnimation.teamName}</p>
-                        <p className="text-ipl-goldLight text-lg font-black font-mono animate-fade-in">{soldAnimation.price}</p>
-                      </div>
-                    </div>
-                  )}
-                  {unsoldAnimation && (
-                    <div className="sold-overlay">
-                      <div className="unsold-stamp">UNSOLD</div>
-                    </div>
-                  )}
+                  <SoldOverlay soldAnimation={soldAnimation} unsoldAnimation={unsoldAnimation} teams={teams} />
 
                   {/* Active Player Card (2 cols) */}
                   <div className="md:col-span-2 bg-ipl-dark/50 border border-white/5 rounded-xl p-4 flex flex-col items-center text-center player-card-reveal">

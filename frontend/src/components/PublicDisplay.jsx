@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSocket } from '../context/SocketContext';
 import axios from 'axios';
 import { Clock, Users, Sparkles, Radio, Trophy } from 'lucide-react';
+import SoldOverlay from './SoldOverlay';
 
 export default function PublicDisplay() {
   const { auctionState, auctionStage, teams, playersVersion, soldAnimation, unsoldAnimation } = useSocket();
@@ -133,58 +134,7 @@ export default function PublicDisplay() {
               <div className="absolute top-0 left-0 right-0 h-[3px] gold-gradient"></div>
               
               {/* Sold/Unsold Overlay */}
-              {soldAnimation && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg p-4">
-                  <div className="text-center p-8 md:p-14 bg-gradient-to-b from-ipl-dark to-ipl-darker border-4 border-emerald-500 rounded-3xl shadow-[0_0_200px_rgba(16,185,129,0.5)] animate-scale-in w-full max-w-2xl relative overflow-hidden">
-                    {/* Decorative glow rings */}
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                      <div className="w-[500px] h-[500px] rounded-full border-2 border-emerald-500/20 animate-ping" style={{animationDuration: '2s'}}></div>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                      <div className="w-[350px] h-[350px] rounded-full border border-ipl-gold/15 animate-ping" style={{animationDuration: '2.5s'}}></div>
-                    </div>
-
-                    {/* SOLD stamp */}
-                    <div className="sold-stamp text-5xl md:text-7xl mb-6 leading-none relative z-10">SOLD!</div>
-                    
-                    <div className="flex flex-col items-center gap-3 relative z-10">
-                      {/* Player name */}
-                      <p className="text-white text-2xl md:text-4xl font-black animate-fade-in uppercase tracking-wide">{soldAnimation.playerName}</p>
-                      <p className="text-ipl-gray text-xs md:text-sm uppercase tracking-[0.3em]">goes to</p>
-                      
-                      {/* TEAM LOGO — hero element */}
-                      {teams.find(t => t.teamName === soldAnimation.teamName) && (
-                        <div className="relative my-4">
-                          <div className="absolute inset-0 bg-emerald-500/30 rounded-full blur-3xl scale-150 animate-pulse"></div>
-                          <img 
-                            src={teams.find(t => t.teamName === soldAnimation.teamName).logo} 
-                            className="w-32 h-32 md:w-44 md:h-44 rounded-full border-[6px] border-emerald-400/70 shadow-[0_0_60px_rgba(16,185,129,0.4)] relative z-10 bg-ipl-dark object-contain p-2" 
-                            alt={soldAnimation.teamName} 
-                          />
-                        </div>
-                      )}
-                      
-                      {/* Team name */}
-                      <p className="text-white text-2xl md:text-3xl font-black animate-fade-in uppercase tracking-wider">{soldAnimation.teamName}</p>
-                      
-                      {/* Price */}
-                      <div className="border-t-2 border-emerald-500/30 pt-4 mt-2 w-full max-w-xs">
-                        <p className="text-emerald-400 text-4xl md:text-6xl font-black font-mono animate-fade-in">{soldAnimation.price}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-              {unsoldAnimation && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg p-4">
-                  <div className="text-center p-8 md:p-14 bg-gradient-to-b from-ipl-dark to-ipl-darker border-4 border-red-500 rounded-3xl shadow-[0_0_150px_rgba(239,68,68,0.3)] animate-scale-in w-full max-w-lg">
-                    <div className="unsold-stamp text-5xl md:text-[7rem] mb-4">UNSOLD</div>
-                    {unsoldAnimation.playerName && (
-                      <p className="text-white/60 text-lg font-bold uppercase mt-4">{unsoldAnimation.playerName}</p>
-                    )}
-                  </div>
-                </div>
-              )}
+              <SoldOverlay soldAnimation={soldAnimation} unsoldAnimation={unsoldAnimation} teams={teams} />
 
               {/* Player Image */}
               <div className="flex justify-center mb-4">
