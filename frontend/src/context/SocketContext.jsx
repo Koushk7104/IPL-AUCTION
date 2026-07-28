@@ -144,28 +144,36 @@ export const SocketProvider = ({ children }) => {
       setPlayersVersion((prev) => prev + 1);
     });
 
+    newSocket.on('auction:sold', (data) => {
+      setSoldAnimation(data);
+      setTimeout(() => setSoldAnimation(null), 5000);
+    });
+
+    newSocket.on('auction:unsold', (data) => {
+      setUnsoldAnimation(data);
+      setTimeout(() => setUnsoldAnimation(null), 4000);
+    });
+
     newSocket.on('auction:log', (log) => {
       setLogs((prev) => [log, ...prev].slice(0, 100)); // Cap logs at 100 entries
 
-      // Detect sold/unsold events for animations
-      if (log.type === 'success' && log.message.includes('SOLD!')) {
-        // Parse "SOLD! PlayerName is sold to TeamName for ₹X.XX Cr."
-        const soldMatch = log.message.match(/SOLD! (.+) is sold to (.+) for (₹.+)/);
+      // Fallback regex detection for sold/unsold events
+      if (log.type === 'success' && (log.message.includes('SOLD!') || log.message.includes('sold to'))) {
+        const soldMatch = log.message.match(/SOLD!? (.+) is sold to (.+) for (.+)/i);
         if (soldMatch) {
           setSoldAnimation({
             playerName: soldMatch[1],
             teamName: soldMatch[2],
             price: soldMatch[3]
           });
-          // Auto-clear after 4 seconds
-          setTimeout(() => setSoldAnimation(null), 4000);
+          setTimeout(() => setSoldAnimation(null), 5000);
         }
       }
-      if (log.type === 'info' && log.message.includes('went UNSOLD')) {
-        const unsoldMatch = log.message.match(/Player (.+) went UNSOLD/);
+      if (log.type === 'info' && log.message.includes('UNSOLD')) {
+        const unsoldMatch = log.message.match(/Player (.+) went UNSOLD/i);
         if (unsoldMatch) {
           setUnsoldAnimation({ playerName: unsoldMatch[1] });
-          setTimeout(() => setUnsoldAnimation(null), 3000);
+          setTimeout(() => setUnsoldAnimation(null), 4000);
         }
       }
     });

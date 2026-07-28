@@ -415,10 +415,16 @@ const initSocket = (server, demoMode = false) => {
           type: 'success',
           message: `Congratulations! You purchased ${player.name} for ₹${(finalPrice / 10000000).toFixed(2)} Cr!`
         });
-
         io.to('general').emit('auction:log', {
           type: 'success',
           message: `SOLD! ${player.name} is sold to ${team.teamName} for ₹${(finalPrice / 10000000).toFixed(2)} Cr.`
+        });
+
+        io.to('general').emit('auction:sold', {
+          playerName: player.name,
+          teamName: team.teamName,
+          teamLogo: team.logo,
+          price: `₹${(finalPrice / 10000000).toFixed(2)} Cr`
         });
       } catch (err) {
         console.error(err);
@@ -438,16 +444,13 @@ const initSocket = (server, demoMode = false) => {
           return socket.emit('error', 'No player currently up for auction');
         }
 
-        const playerId = isDemoMode ? state.currentPlayer : state.currentPlayer;
-        const player = await dataLayer.findPlayerById(playerId);
-        if (!player) {
-          return socket.emit('error', 'Player not found');
-        }
+        const currentPlayerId = isDemoMode ? state.currentPlayer : state.currentPlayer;
+        const player = await dataLayer.findPlayerById(currentPlayerId);
 
-        player.status = 'unsold';
-        player.currentBid = 0;
-        player.leadingTeam = null;
-        await dataLayer.savePlayer(player);
+        if (player) {
+          player.status = 'unsold';
+          await dataLayer.savePlayer(player);
+        }
 
         state.currentPlayer = null;
         state.status = 'idle';
@@ -459,9 +462,14 @@ const initSocket = (server, demoMode = false) => {
         const updatedState = await dataLayer.getFullAuctionState();
         io.to('general').emit('auction:state', updatedState);
         broadcastPlayerRefresh(io);
+
         io.to('general').emit('auction:log', {
           type: 'info',
-          message: `Player ${player.name} went UNSOLD.`
+          message: `Player ${player ? player.name : ''} went UNSOLD.`
+        });
+
+        io.to('general').emit('auction:unsold', {
+          playerName: player ? player.name : ''
         });
       } catch (err) {
         console.error(err);
@@ -835,6 +843,13 @@ const startTimer = (io) => {
               message: `SOLD! ${player.name} is sold to ${team.teamName} for ₹${(finalPrice / 10000000).toFixed(2)} Cr.`
             });
 
+            io.to('general').emit('auction:sold', {
+              playerName: player.name,
+              teamName: team.teamName,
+              teamLogo: team.logo,
+              price: `₹${(finalPrice / 10000000).toFixed(2)} Cr`
+            });
+
             io.to('general').emit('auction:timeup', { message: `Time's up! ${player.name} SOLD to ${team.teamName}!` });
           }
         } else {
@@ -864,6 +879,10 @@ const startTimer = (io) => {
               message: `Player ${player.name} went UNSOLD. No bids received.`
             });
           }
+
+          io.to('general').emit('auction:unsold', {
+            playerName: player ? player.name : ''
+          });
 
           io.to('general').emit('auction:timeup', { message: 'Time\'s up! No bids — player goes UNSOLD.' });
         }
