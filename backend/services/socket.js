@@ -637,19 +637,23 @@ const initSocket = (server, demoMode = false) => {
       }
 
       try {
-        const teamId = socket.user.id;
+        const teamId = (socket.user.id || socket.user._id || '').toString();
         const state = await dataLayer.getAuctionState();
 
-        if (state.status !== 'active' || !state.currentPlayer) {
+        if (!state || state.status !== 'active' || !state.currentPlayer) {
           return socket.emit('error', 'Auction is not active for bidding');
         }
 
-        if (state.leadingTeam && state.leadingTeam.toString() === teamId.toString()) {
+        const leadingTeamId = state.leadingTeam 
+          ? (state.leadingTeam._id ? state.leadingTeam._id.toString() : state.leadingTeam.toString())
+          : null;
+
+        if (leadingTeamId && leadingTeamId === teamId) {
           return socket.emit('error', 'You are already the leading bidder!');
         }
 
         const team = await dataLayer.findTeamById(teamId);
-        const currentPlayerId = isDemoMode ? state.currentPlayer : state.currentPlayer;
+        const currentPlayerId = state.currentPlayer._id || state.currentPlayer;
         const player = await dataLayer.findPlayerById(currentPlayerId);
 
         if (!team || !player) {
@@ -674,16 +678,18 @@ const initSocket = (server, demoMode = false) => {
 
         const isFirstBid = !state.leadingTeam;
         let nextBid;
+        const safeIncrement = Number(increment || 0);
+
         if (customAmount) {
-          nextBid = customAmount;
-          if (nextBid <= state.currentBid) {
+          nextBid = Number(customAmount);
+          if (isNaN(nextBid) || nextBid <= state.currentBid) {
             return socket.emit('error', `Custom bid must be higher than current bid of ₹${(state.currentBid / 10000000).toFixed(2)} Cr`);
           }
           if (isFirstBid && nextBid < player.basePrice) {
             return socket.emit('error', `First bid must be at least the base price of ₹${(player.basePrice / 10000000).toFixed(2)} Cr`);
           }
         } else {
-          nextBid = isFirstBid ? player.basePrice : (state.currentBid + increment);
+          nextBid = isFirstBid ? player.basePrice : (state.currentBid + safeIncrement);
         }
 
         if (team.remainingPurse < nextBid) {
@@ -723,9 +729,10 @@ const initSocket = (server, demoMode = false) => {
         io.to('general').emit('auction:bid-history', bids);
         broadcastPlayerRefresh(io);
         
+        const incText = customAmount ? `(Custom Bid)` : `(+₹${(safeIncrement / 10000000).toFixed(2)} Cr)`;
         io.to('general').emit('auction:log', {
           type: 'bid',
-          message: `${team.teamName} bids ₹${(nextBid / 10000000).toFixed(2)} Cr (+₹${(increment / 10000000).toFixed(2)} Cr)`
+          message: `${team.teamName} bids ₹${(nextBid / 10000000).toFixed(2)} Cr ${incText}`
         });
 
         socket.emit('team:notification', {
@@ -734,16 +741,17 @@ const initSocket = (server, demoMode = false) => {
         });
 
         if (previousLeader) {
-          io.to(`team:${previousLeader}`).emit('team:notification', {
+          const prevId = previousLeader._id ? previousLeader._id.toString() : previousLeader.toString();
+          io.to(`team:${prevId}`).emit('team:notification', {
             type: 'warning',
-            message: `You have been outbid for ${player.name}! Current bid is ₹${(nextBid / 10000000).toFixed(2)} Cr.`
+            message: 'You have been outbid!'
           });
         }
 
         startTimer(io);
       } catch (err) {
-        console.error(err);
-        socket.emit('error', 'Failed to place bid');
+        console.error('Bidding execution error:', err);
+        socket.emit('error', err.message || 'Failed to place bid');
       }
     });
 
