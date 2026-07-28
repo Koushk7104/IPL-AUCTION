@@ -640,11 +640,19 @@ const initSocket = (server, demoMode = false) => {
           return socket.emit('error', 'Invalid player or team context');
         }
 
-        const validSquadCount = Array.isArray(team.squad) 
-          ? team.squad.filter(p => isDemoMode ? (getDemoPlayerById(p) || (typeof p === 'object' && p._id)) : p).length 
+        const actualSoldPlayers = Array.isArray(team.squad) 
+          ? team.squad.filter(p => {
+              if (typeof p === 'object' && p !== null) return p.status === 'sold';
+              if (isDemoMode) {
+                const dp = getDemoPlayerById(p);
+                return dp && dp.status === 'sold';
+              }
+              // In MongoDB mode if squad contains ObjectIds, check if squad entries are populated
+              return typeof p === 'string' && p.length > 20;
+            }).length 
           : 0;
 
-        if (validSquadCount >= 15) {
+        if (actualSoldPlayers >= 15) {
           return socket.emit('error', 'Squad limit reached! Your team already has 15 players.');
         }
 

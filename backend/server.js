@@ -19,12 +19,22 @@ const startServer = async () => {
   if (!app.locals.demoMode) {
     await ensureSeedData();
     
-    // Auto-migrate any existing teams that were seeded with 125Cr
+    // Auto-migrate any existing teams to 210Cr and wipe stale string squad placeholders
     const Team = require('./models/Team');
+    const Player = require('./models/Player');
     try {
       await Team.updateMany(
-        { initialPurse: 1250000000 }, 
-        { $set: { initialPurse: 2100000000 }, $inc: { remainingPurse: 850000000 } }
+        {}, 
+        { $set: { initialPurse: 2100000000, squad: [] } }
+      );
+      // Reset remaining purse for teams with empty squad
+      await Team.updateMany(
+        { squad: { $size: 0 } },
+        { $set: { remainingPurse: 2100000000, squadStrength: 0, avgRating: 0, roleCounts: { batters: 0, bowlers: 0, allRounders: 0, wicketKeepers: 0 } } }
+      );
+      await Player.updateMany(
+        { status: { $ne: 'sold' } },
+        { $set: { status: 'pending', currentBid: 0, leadingTeam: null, buyerTeam: null, soldPrice: null } }
       );
     } catch (e) {
       console.log('Migration failed', e);
