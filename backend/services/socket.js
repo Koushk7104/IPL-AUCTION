@@ -663,11 +663,10 @@ const initSocket = (server, demoMode = false) => {
         const actualSoldPlayers = Array.isArray(team.squad) 
           ? team.squad.filter(p => {
               if (typeof p === 'object' && p !== null) return p.status === 'sold';
-              if (isDemoMode) {
-                const dp = getDemoPlayerById(p);
+              if (isDemoMode && demoData) {
+                const dp = demoData.getDemoPlayers ? demoData.getDemoPlayers().find(item => item._id === p || item.id === p) : null;
                 return dp && dp.status === 'sold';
               }
-              // In MongoDB mode if squad contains ObjectIds, check if squad entries are populated
               return typeof p === 'string' && p.length > 20;
             }).length 
           : 0;
