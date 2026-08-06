@@ -205,6 +205,9 @@ export default function TeamDashboard() {
                         src={auctionState.currentPlayer.image} 
                         alt={auctionState.currentPlayer.name} 
                         className="w-32 h-32 rounded-full border-[3px] border-ipl-gold/50 object-cover bg-ipl-dark relative z-10"
+                        onError={(e) => {
+                          e.target.src = `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(auctionState.currentPlayer.name || 'player')}&backgroundColor=0b0f19&color=f5c453`;
+                        }}
                       />
                       <div className="absolute -bottom-1 -right-1 bg-ipl-gold text-ipl-dark text-[10px] font-black px-2 py-0.5 rounded-full z-20 shadow-lg">
                         ⭐ {auctionState.currentPlayer.performanceRating}
@@ -394,7 +397,14 @@ export default function TeamDashboard() {
                     {user.squad.map((player) => (
                       <tr key={player._id} className="hover:bg-white/[0.02] transition duration-150">
                         <td className="py-2.5 flex items-center space-x-2.5">
-                          <img src={player.image} alt={player.name} className="w-6 h-6 rounded-full border border-white/10 object-cover bg-ipl-dark" />
+                          <img 
+                            src={player.image} 
+                            alt={player.name} 
+                            className="w-6 h-6 rounded-full border border-white/10 object-cover bg-ipl-dark" 
+                            onError={(e) => {
+                              e.target.src = `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(player.name || 'player')}&backgroundColor=0b0f19&color=f5c453`;
+                            }}
+                          />
                           <span className="font-bold text-white">{player.name}</span>
                         </td>
                         <td className="py-2.5 text-ipl-gray">{player.role}</td>

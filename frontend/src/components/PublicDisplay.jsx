@@ -144,6 +144,9 @@ export default function PublicDisplay() {
                     src={auctionState.currentPlayer.image} 
                     alt={auctionState.currentPlayer.name} 
                     className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-ipl-gold/60 object-cover bg-ipl-dark relative z-10 shadow-2xl"
+                    onError={(e) => {
+                      e.target.src = `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(auctionState.currentPlayer.name || 'player')}&backgroundColor=0b0f19&color=f5c453`;
+                    }}
                   />
                   <div className="absolute bottom-2 right-2 bg-ipl-gold text-ipl-dark text-sm md:text-base font-black w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center border-2 border-ipl-dark z-20 shadow-lg">
                     {auctionState.currentPlayer.performanceRating}

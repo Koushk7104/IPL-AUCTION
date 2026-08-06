@@ -147,6 +147,9 @@ export default function AdminDashboard({ setGlobalView }) {
                         src={auctionState.currentPlayer.image} 
                         alt={auctionState.currentPlayer.name} 
                         className="w-28 h-28 rounded-full border-[3px] border-ipl-gold/60 object-cover bg-ipl-dark relative z-10"
+                        onError={(e) => {
+                          e.target.src = `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(auctionState.currentPlayer.name || 'player')}&backgroundColor=0b0f19&color=f5c453`;
+                        }}
                       />
                       <div className="absolute -bottom-1 -right-1 bg-ipl-gold text-ipl-dark text-[10px] font-black px-2 py-0.5 rounded-full z-20 shadow-lg">
                         ⭐ {auctionState.currentPlayer.performanceRating}
