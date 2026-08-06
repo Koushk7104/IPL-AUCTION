@@ -291,6 +291,8 @@ module.exports = {
   demoPlayers,
   demoTeams,
   demoAuctionState,
+  buildDemoTeams,
+  buildDemoPlayers,
   getDemoTeamByUsername,
   getDemoTeamById,
   getDemoPlayers,

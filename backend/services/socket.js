@@ -555,53 +555,14 @@ const initSocket = (server, demoMode = false) => {
         stopTimer();
 
         if (isDemoMode) {
-          const { seedDB } = require('../scripts/seed');
-          demoData.demoTeams.length = 0; // Clear existing demo teams
+          demoData.demoTeams.length = 0;
           demoData.demoPlayers.length = 0;
-          await require('../lib/demoData').getDemoTeams(); // Will re-init teams and players from seed or defaults
-          // Instead of a complex manual clear, we can just invoke seed logic for demo
-          demoData.demoTeams.length = 0; 
-          demoData.demoPlayers.length = 0;
-          const { teamsData, playersRaw, calculateRatingAndBasePrice, getAvatar } = require('../scripts/seed');
-          const bcrypt = require('bcryptjs');
-          const salt = await bcrypt.genSalt(10);
-          const passwordHash = await bcrypt.hash('password123', salt);
           
-          teamsData.forEach((team) => {
-            demoData.demoTeams.push({
-              _id: `demo-${team.username}`,
-              username: team.username,
-              password: passwordHash,
-              teamName: team.teamName,
-              logo: `https://api.dicebear.com/7.x/identicon/svg?seed=${encodeURIComponent(team.username)}&backgroundColor=0b0f19&color=f5c453`,
-              initialPurse: 2100000000,
-              remainingPurse: 2100000000,
-              squad: [],
-              squadStrength: 0,
-              avgRating: 0,
-              roleCounts: { batters: 0, bowlers: 0, allRounders: 0, wicketKeepers: 0 },
-              highestPurchase: 0,
-              cheapestPurchase: 0
-            });
-          });
+          const freshTeams = await demoData.buildDemoTeams();
+          freshTeams.forEach(t => demoData.demoTeams.push(t));
 
-          playersRaw.forEach((player, index) => {
-            const { rating, basePrice } = calculateRatingAndBasePrice(player);
-            demoData.demoPlayers.push({
-              _id: `demo-player-${index + 1}`,
-              ...player,
-              image: getAvatar(player.name),
-              performanceRating: rating,
-              basePrice,
-              status: 'pending',
-              currentBid: 0,
-              leadingTeam: null,
-              soldPrice: null,
-              buyerTeam: null,
-              createdAt: new Date().toISOString(),
-              updatedAt: new Date().toISOString()
-            });
-          });
+          const freshPlayers = demoData.buildDemoPlayers();
+          freshPlayers.forEach(p => demoData.demoPlayers.push(p));
 
           demoData.demoAuctionState.currentPlayer = null;
           demoData.demoAuctionState.status = 'idle';
