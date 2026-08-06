@@ -2,7 +2,7 @@
   {
     "username": "mumbai-indians",
     "teamName": "Mumbai Indians",
-    "logo": "https://assets.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/200px-Mumbai_Indians_Logo.svg.png",
     "espnId": "4346",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
@@ -21,7 +21,7 @@
   {
     "username": "chennai-super-kings",
     "teamName": "Chennai Super Kings",
-    "logo": "https://assets.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/200px-Chennai_Super_Kings_Logo.svg.png",
     "espnId": "4343",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
@@ -40,7 +40,7 @@
   {
     "username": "delhi-capitals",
     "teamName": "Delhi Capitals",
-    "logo": "https://assets.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Delhi_Capitals_Logo.svg/200px-Delhi_Capitals_Logo.svg.png",
     "espnId": "4347",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
@@ -59,7 +59,7 @@
   {
     "username": "kolkata-knight-riders",
     "teamName": "Kolkata Knight Riders",
-    "logo": "https://assets.iplt20.com/ipl/KKR/Logos/Logooutline/KKRoutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/200px-Kolkata_Knight_Riders_Logo.svg.png",
     "espnId": "4341",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
@@ -78,7 +78,7 @@
   {
     "username": "punjab-kings",
     "teamName": "Punjab Kings",
-    "logo": "https://assets.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Punjab_Kings_Logo.svg/200px-Punjab_Kings_Logo.svg.png",
     "espnId": "4342",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
@@ -97,7 +97,7 @@
   {
     "username": "rajasthan-royals",
     "teamName": "Rajasthan Royals",
-    "logo": "https://assets.iplt20.com/ipl/RR/Logos/Logooutline/RRoutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Rajasthan_Royals_Logo.svg/200px-Rajasthan_Royals_Logo.svg.png",
     "espnId": "4345",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
@@ -116,7 +116,7 @@
   {
     "username": "royal-challengers-bengaluru",
     "teamName": "Royal Challengers Bengaluru",
-    "logo": "https://assets.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Royal_Challengers_Bengaluru_logo.png/200px-Royal_Challengers_Bengaluru_logo.png",
     "espnId": "4340",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
@@ -135,7 +135,7 @@
   {
     "username": "sunrisers-hyderabad",
     "teamName": "Sunrisers Hyderabad",
-    "logo": "https://assets.iplt20.com/ipl/SRH/Logos/Logooutline/SRHoutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Sunrisers_Hyderabad.svg/200px-Sunrisers_Hyderabad.svg.png",
     "espnId": "5143",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
@@ -154,7 +154,7 @@
   {
     "username": "lucknow-super-giants",
     "teamName": "Lucknow Super Giants",
-    "logo": "https://assets.iplt20.com/ipl/LSG/Logos/Logooutline/LSGoutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Lucknow_Super_Giants_IPL_Logo.svg/200px-Lucknow_Super_Giants_IPL_Logo.svg.png",
     "espnId": "6903",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
@@ -173,7 +173,7 @@
   {
     "username": "gujarat-titans",
     "teamName": "Gujarat Titans",
-    "logo": "https://assets.iplt20.com/ipl/GT/Logos/Logooutline/GToutline.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/200px-Gujarat_Titans_Logo.svg.png",
     "espnId": "6904",
     "initialPurse": 2100000000,
     "remainingPurse": 2100000000,
