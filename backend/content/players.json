@@ -24,7 +24,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 95,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -164,7 +164,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 100,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -276,7 +276,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 88,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -360,7 +360,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 76,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -556,7 +556,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 88,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -752,7 +752,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 91,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1088,7 +1088,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 90,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1200,7 +1200,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 83,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -1284,7 +1284,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 81,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -1396,7 +1396,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 95,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -1508,7 +1508,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 89,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -1676,7 +1676,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -1760,7 +1760,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 79,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -1788,7 +1788,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -1872,7 +1872,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 90,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2124,7 +2124,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 90,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2236,7 +2236,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 90,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2264,7 +2264,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 90,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2404,7 +2404,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 76,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -2432,7 +2432,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -2460,7 +2460,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 99,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2488,7 +2488,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -2600,7 +2600,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 76,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -2656,7 +2656,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 82,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -2684,7 +2684,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 79,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -2768,7 +2768,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 84,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -2796,7 +2796,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 82,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -2824,7 +2824,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 92,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -2880,7 +2880,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 76,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -2992,7 +2992,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 89,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -3384,7 +3384,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -3412,7 +3412,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 89,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -3440,7 +3440,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 93,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3468,7 +3468,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 76,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -3524,7 +3524,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -3748,7 +3748,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 84,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -3804,7 +3804,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 99,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -3888,7 +3888,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -3972,7 +3972,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 94,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4224,7 +4224,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 100,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -4336,7 +4336,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 76,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -4532,7 +4532,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 81,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -4588,7 +4588,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 79,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -4644,7 +4644,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -4728,7 +4728,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 76,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -4812,7 +4812,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -4840,7 +4840,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -4868,7 +4868,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -4924,7 +4924,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 90,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5008,7 +5008,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 79,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -5036,7 +5036,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -5232,7 +5232,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 98,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -5344,7 +5344,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -5400,7 +5400,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 85,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -5540,7 +5540,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 83,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -5904,7 +5904,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 81,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -6128,7 +6128,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -6212,7 +6212,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -6240,7 +6240,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 100,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6296,7 +6296,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -6324,7 +6324,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 85,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -6352,7 +6352,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 90,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6576,7 +6576,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 79,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -6604,7 +6604,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 90,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6660,7 +6660,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 93,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6800,7 +6800,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 92,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6828,7 +6828,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 76,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -6856,7 +6856,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 100,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6884,7 +6884,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 95,
-    "basePrice": 5000000,
+    "basePrice": 20000000,
     "hasPhoto": false
   },
   {
@@ -6968,7 +6968,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 80,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -6996,7 +6996,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 85,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {
@@ -7024,7 +7024,7 @@
     "soldPrice": null,
     "buyerTeam": null,
     "performanceRating": 78,
-    "basePrice": 5000000,
+    "basePrice": 10000000,
     "hasPhoto": false
   },
   {

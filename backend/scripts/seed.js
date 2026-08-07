@@ -49,17 +49,11 @@ function calculateRatingAndBasePrice(player) {
   rating = Math.min(Math.max(rating, 60), 99);
 
   // Map rating to base price
-  let basePrice = 2000000; // default 20L
-  if (rating >= 95) {
+  let basePrice = 5000000; // default 0.50 Cr
+  if (rating >= 90) {
     basePrice = 20000000; // 2.00 Cr
-  } else if (rating >= 90) {
-    basePrice = 15000000; // 1.50 Cr
-  } else if (rating >= 85) {
+  } else if (rating > 75) {
     basePrice = 10000000; // 1.00 Cr
-  } else if (rating >= 80) {
-    basePrice = 5000000;  // 50L
-  } else if (rating >= 70) {
-    basePrice = 2000000;  // 20L
   }
 
   return { rating, basePrice };
