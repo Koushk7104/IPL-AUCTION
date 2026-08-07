@@ -7,7 +7,7 @@ export default function Leaderboard() {
   const [rankedTeams, setRankedTeams] = useState([]);
   const [expandedTeamId, setExpandedTeamId] = useState(null);
   const [loading, setLoading] = useState(true);
-  const { teamsVersion } = useSocket();
+  const { teamsVersion, auctionStage } = useSocket();
 
   const fetchLeaderboard = async () => {
     try {
@@ -131,7 +131,7 @@ export default function Leaderboard() {
             const isExpanded = expandedTeamId === team._id;
             const { batting, bowling, allRounder } = calculateRoleStrengths(team.squad || []);
             const squadCount = team.squad?.length || 0;
-            const isDisqualified = squadCount < 15;
+            const isDisqualified = auctionStage === 'ended' && squadCount < 15;
             const isWinner = index === 0 && !isDisqualified && team.squadStrength > 0;
 
             return (

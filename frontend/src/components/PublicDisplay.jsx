@@ -3,10 +3,15 @@ import { useSocket } from '../context/SocketContext';
 import axios from 'axios';
 import { Clock, Users, Sparkles, Radio, Trophy } from 'lucide-react';
 import SoldOverlay from './SoldOverlay';
+import Leaderboard from './Leaderboard';
 
 export default function PublicDisplay() {
   const { auctionState, auctionStage, teams, playersVersion, soldAnimation, unsoldAnimation } = useSocket();
   const [players, setPlayers] = useState([]);
+
+  if (auctionStage === 'ended') {
+    return <Leaderboard />;
+  }
 
   const fetchPlayers = async () => {
     try {
@@ -116,7 +121,7 @@ export default function PublicDisplay() {
                   </div>
                 </div>
                 <div className="text-right">
-                  <span className={`text-[10px] font-bold font-mono block ${team.isQualified ? 'text-ipl-goldLight' : 'text-red-400/70 line-through'}`}>
+                  <span className={`text-[10px] font-bold font-mono block ${team.isQualified ? 'text-ipl-goldLight' : (auctionStage === 'ended' ? 'text-red-400/70 line-through' : 'text-white')}`}>
                     {team.squadStrength} pts
                   </span>
                   <span className="text-[8px] text-ipl-gray block">₹{(team.remainingPurse / 10000000).toFixed(0)}Cr</span>
@@ -186,29 +191,35 @@ export default function PublicDisplay() {
 
               {/* Current Bid Dashboard */}
               <div className="bg-ipl-dark/60 border border-white/5 rounded-2xl p-4 max-w-lg mx-auto w-full">
-                <div className="grid grid-cols-2 gap-4 divide-x divide-white/5">
-                  <div className="text-center">
-                    <span className="text-[9px] text-ipl-gray uppercase tracking-wider block mb-1">CURRENT BID</span>
-                    <strong className="text-2xl md:text-3xl font-black text-ipl-goldLight font-mono">
-                      {auctionState.currentBid > 0 ? formatPurse(auctionState.currentBid) : formatPurse(auctionState.currentPlayer.basePrice)}
-                    </strong>
-                    <span className="text-[8px] text-white/30 block mt-0.5">
-                      {auctionState.currentBid > 0 ? 'Active Bids' : 'Base Price'}
-                    </span>
-                  </div>
-                  <div className="text-center flex flex-col justify-center items-center pl-4">
-                    <span className="text-[9px] text-ipl-gray uppercase tracking-wider block mb-1">LEADING</span>
-                    {auctionState.leadingTeam ? (
-                      <div className="flex items-center space-x-2">
-                        <img src={auctionState.leadingTeam.logo} alt="" className="w-6 h-6 rounded-full" />
-                        <strong className="text-base md:text-lg font-black text-white uppercase">{auctionState.leadingTeam.teamName}</strong>
-                      </div>
-                    ) : (
-                      <span className="text-sm font-bold text-white/40 uppercase italic">No Bids</span>
-                    )}
-                  </div>
+                <div className="bg-ipl-deep/50 rounded-2xl p-4 md:p-6 mb-5 grid grid-cols-3 gap-4 divide-x divide-white/5 border border-white/5 relative overflow-hidden shadow-inner">
+                <div className="text-center">
+                  <span className="text-[9px] text-ipl-gray uppercase tracking-wider block mb-1">BASE PRICE</span>
+                  <strong className="text-xl md:text-2xl font-black text-white/80 font-mono">
+                    {formatPurse(auctionState.currentPlayer.basePrice)}
+                  </strong>
+                </div>
+                <div className="text-center pl-4">
+                  <span className="text-[9px] text-ipl-gray uppercase tracking-wider block mb-1">CURRENT BID</span>
+                  <strong className="text-2xl md:text-3xl font-black text-ipl-goldLight font-mono">
+                    {auctionState.currentBid > 0 ? formatPurse(auctionState.currentBid) : '---'}
+                  </strong>
+                  <span className="text-[8px] text-white/30 block mt-0.5">
+                    {auctionState.currentBid > 0 ? 'Active Bids' : 'No Bids'}
+                  </span>
+                </div>
+                <div className="text-center flex flex-col justify-center items-center pl-4">
+                  <span className="text-[9px] text-ipl-gray uppercase tracking-wider block mb-1">LEADING</span>
+                  {auctionState.leadingTeam ? (
+                    <div className="flex items-center space-x-2">
+                      <img src={auctionState.leadingTeam.logo} alt="" className="w-6 h-6 rounded-full" />
+                      <strong className="text-base md:text-lg font-black text-white uppercase">{auctionState.leadingTeam.teamName}</strong>
+                    </div>
+                  ) : (
+                    <span className="text-sm font-bold text-white/40 uppercase italic">No Bids</span>
+                  )}
                 </div>
               </div>
+            </div>
             </div>
           ) : (
             <div className="bg-ipl-card border border-white/5 rounded-3xl flex-1 flex flex-col items-center justify-center text-center p-12 shadow-inner-gold">

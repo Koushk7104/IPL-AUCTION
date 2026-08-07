@@ -8,6 +8,7 @@ let Player, Team, AuctionState, BidHistory;
 let demoData;
 
 let timerInterval = null;
+let lastBidTimestamp = 0;
 let isDemoMode = false;
 
 const broadcastPlayerRefresh = (io) => {
@@ -237,6 +238,21 @@ const initSocket = (server, demoMode = false) => {
       try {
         stopTimer();
 
+        // Revert previous active player to pending if we are selecting a new player
+        let state = await dataLayer.getAuctionState();
+        if (state.currentPlayer) {
+          const prevPlayerId = state.currentPlayer._id || state.currentPlayer;
+          if (prevPlayerId.toString() !== playerId.toString()) {
+            const prevPlayer = await dataLayer.findPlayerById(prevPlayerId);
+            if (prevPlayer && prevPlayer.status === 'active') {
+              prevPlayer.status = 'pending';
+              prevPlayer.currentBid = 0;
+              prevPlayer.leadingTeam = null;
+              await dataLayer.savePlayer(prevPlayer);
+            }
+          }
+        }
+
         const player = await dataLayer.findPlayerById(playerId);
         if (!player) {
           return socket.emit('error', 'Player not found');
@@ -253,7 +269,7 @@ const initSocket = (server, demoMode = false) => {
         await dataLayer.savePlayer(player);
 
         // Update global auction state
-        const state = await dataLayer.getAuctionState();
+        state = await dataLayer.getAuctionState();
         state.currentPlayer = isDemoMode ? player._id : player._id;
         state.status = 'idle';
         state.currentBid = 0;
@@ -592,12 +608,18 @@ const initSocket = (server, demoMode = false) => {
     // --- TEAM EVENTS ---
 
     // 8. Place Bid
-    socket.on('team:bid', async ({ increment, customAmount }) => {
+    socket.on('team:bid', async ({ increment }) => {
       if (socket.user.role !== 'team') {
         return socket.emit('error', 'Only franchise teams can bid');
       }
 
       try {
+        const now = Date.now();
+        if (now - lastBidTimestamp < 2000) {
+          return socket.emit('error', 'Please wait 2 seconds between bids.');
+        }
+        lastBidTimestamp = now;
+
         const teamId = (socket.user.id || socket.user._id || '').toString();
         const state = await dataLayer.getAuctionState();
 
@@ -640,17 +662,7 @@ const initSocket = (server, demoMode = false) => {
         let nextBid;
         const safeIncrement = Number(increment || 0);
 
-        if (customAmount) {
-          nextBid = Number(customAmount);
-          if (isNaN(nextBid) || nextBid <= state.currentBid) {
-            return socket.emit('error', `Custom bid must be higher than current bid of ₹${(state.currentBid / 10000000).toFixed(2)} Cr`);
-          }
-          if (isFirstBid && nextBid < player.basePrice) {
-            return socket.emit('error', `First bid must be at least the base price of ₹${(player.basePrice / 10000000).toFixed(2)} Cr`);
-          }
-        } else {
-          nextBid = isFirstBid ? player.basePrice : (state.currentBid + safeIncrement);
-        }
+        nextBid = isFirstBid ? player.basePrice : (state.currentBid + safeIncrement);
 
         if (team.remainingPurse < nextBid) {
           return socket.emit('error', `Insufficient purse! Next bid requires ₹${(nextBid / 10000000).toFixed(2)} Cr, you have ₹${(team.remainingPurse / 10000000).toFixed(2)} Cr.`);
@@ -683,13 +695,19 @@ const initSocket = (server, demoMode = false) => {
         }
 
         const bids = isDemoMode ? demoBidHistory : await dataLayer.getBidHistory(player._id);
+        
+        // Add 3 seconds to the timer
+        state.timerRemaining = Math.min(state.timerDuration || 60, state.timerRemaining + 3);
+        await dataLayer.saveAuctionState(state);
+        
         const updatedState = await dataLayer.getFullAuctionState();
 
         io.to('general').emit('auction:state', updatedState);
         io.to('general').emit('auction:bid-history', bids);
+        io.to('general').emit('auction:timer', { timerRemaining: state.timerRemaining });
         broadcastPlayerRefresh(io);
         
-        const incText = customAmount ? `(Custom Bid)` : `(+₹${(safeIncrement / 10000000).toFixed(2)} Cr)`;
+        const incText = `(+₹${(safeIncrement / 10000000).toFixed(2)} Cr)`;
         io.to('general').emit('auction:log', {
           type: 'bid',
           message: `${team.teamName} bids ₹${(nextBid / 10000000).toFixed(2)} Cr ${incText}`

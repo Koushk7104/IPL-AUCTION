@@ -252,6 +252,10 @@ export default function TeamDashboard() {
 
                     {/* Style info */}
                     <div className="w-full space-y-1 text-[10px]">
+                      <div className="flex justify-between bg-ipl-gold/10 p-1.5 rounded border border-ipl-gold/30">
+                        <span className="text-ipl-goldLight font-bold">Base Price</span>
+                        <span className="text-ipl-gold font-black font-mono">{formatPurse(auctionState.currentPlayer.basePrice)}</span>
+                      </div>
                       <div className="flex justify-between bg-white/5 p-1.5 rounded border border-white/5">
                         <span className="text-ipl-gray">Batting</span>
                         <span className="text-white/80">{auctionState.currentPlayer.battingStyle}</span>
@@ -319,31 +323,7 @@ export default function TeamDashboard() {
                         />
                       </div>
                       
-                      <div className="flex flex-col sm:flex-row gap-2 pt-1">
-                        <input
-                          type="number"
-                          step="0.1"
-                          placeholder="Custom Amount (in Cr)"
-                          className="w-full sm:flex-1 bg-ipl-dark/50 border border-white/10 rounded-xl px-3 py-2 text-xs text-white font-bold placeholder-white/30 focus:outline-none focus:border-ipl-gold/50"
-                          id="customBidInput"
-                        />
-                        <button
-                          onClick={() => {
-                            if (bidCooldown) return;
-                            const val = parseFloat(document.getElementById('customBidInput').value);
-                            if (val > 0) {
-                              setBidCooldown(true);
-                              placeBid(null, val * 10000000);
-                              document.getElementById('customBidInput').value = '';
-                              setTimeout(() => setBidCooldown(false), 2000);
-                            }
-                          }}
-                          disabled={!isBiddingActive || isTeamLeading || bidCooldown}
-                          className="w-full sm:w-auto bg-ipl-gold/10 border border-ipl-gold/30 text-ipl-goldLight hover:bg-ipl-gold hover:text-ipl-dark px-4 py-2 rounded-xl text-xs font-black disabled:opacity-20 transition-all duration-200"
-                        >
-                          Bid Custom
-                        </button>
-                      </div>
+
 
                       {isTeamLeading && isBiddingActive && (
                         <div className="text-center text-[10px] text-emerald-400 font-bold bg-emerald-500/10 border border-emerald-500/20 rounded-lg py-2">
