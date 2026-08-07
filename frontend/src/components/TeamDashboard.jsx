@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSocket } from '../context/SocketContext';
-import { DollarSign, Trophy, Sparkles, Award, User, Clock, Bell, Zap, Radio, Hand } from 'lucide-react';
+import { IndianRupee, Trophy, Sparkles, Award, User, Clock, Bell, Zap, Radio, Hand } from 'lucide-react';
 import SoldOverlay from './SoldOverlay';
 
 export default function TeamDashboard() {
@@ -139,10 +139,9 @@ export default function TeamDashboard() {
         <div className="bg-ipl-card border border-white/5 rounded-2xl p-3.5 animate-fade-in col-span-2 md:col-span-1" style={{ animationDelay: '0.1s' }}>
           <div className="flex justify-between items-center text-[10px] text-ipl-gray">
             <span>PURSE LEFT</span>
-            <DollarSign className="w-3.5 h-3.5 text-ipl-gold" />
+            <IndianRupee className="w-3.5 h-3.5 text-ipl-gold" />
           </div>
           <div className="text-xl md:text-2xl font-black text-ipl-goldLight font-mono mt-1">{formatPurse(user.remainingPurse)}</div>
-          <div className="text-[8px] text-white/30 mt-0.5">of {formatPurse(user.initialPurse)}</div>
         </div>
 
         {/* Squad Count */}
