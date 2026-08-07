@@ -5,7 +5,7 @@
     "logo": "https://www.iplauction.fun/assets/MI.png",
     "espnId": "4346",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -16,7 +16,8 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   },
   {
     "username": "chennai-super-kings",
@@ -24,7 +25,7 @@
     "logo": "https://www.iplauction.fun/assets/CSK.png",
     "espnId": "4343",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -35,7 +36,8 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   },
   {
     "username": "delhi-capitals",
@@ -43,7 +45,7 @@
     "logo": "https://www.iplauction.fun/assets/DC.png",
     "espnId": "4347",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -54,7 +56,8 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   },
   {
     "username": "kolkata-knight-riders",
@@ -62,7 +65,7 @@
     "logo": "https://www.iplauction.fun/assets/KKR.png",
     "espnId": "4341",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -73,7 +76,8 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   },
   {
     "username": "punjab-kings",
@@ -81,7 +85,7 @@
     "logo": "https://www.iplauction.fun/assets/PBKS.png",
     "espnId": "4342",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -92,7 +96,8 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   },
   {
     "username": "rajasthan-royals",
@@ -100,7 +105,7 @@
     "logo": "https://www.iplauction.fun/assets/RR.png",
     "espnId": "4345",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -111,7 +116,8 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   },
   {
     "username": "royal-challengers-bengaluru",
@@ -119,7 +125,7 @@
     "logo": "https://www.iplauction.fun/assets/RCB.png",
     "espnId": "4340",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -130,7 +136,8 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   },
   {
     "username": "sunrisers-hyderabad",
@@ -138,7 +145,7 @@
     "logo": "https://www.iplauction.fun/assets/SRH.png",
     "espnId": "5143",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -149,7 +156,8 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   },
   {
     "username": "lucknow-super-giants",
@@ -157,7 +165,7 @@
     "logo": "https://www.iplauction.fun/assets/LSG.png",
     "espnId": "6903",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -168,7 +176,8 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   },
   {
     "username": "gujarat-titans",
@@ -176,7 +185,7 @@
     "logo": "https://www.iplauction.fun/assets/GT.png",
     "espnId": "6904",
     "initialPurse": 2100000000,
-    "remainingPurse": 2100000000,
+    "remainingPurse": 1500000000,
     "roleCounts": {
       "batters": 0,
       "bowlers": 0,
@@ -187,6 +196,7 @@
     "squadStrength": 0,
     "avgRating": 0,
     "highestPurchase": 0,
-    "cheapestPurchase": 0
+    "cheapestPurchase": 0,
+    "totalPurse": 1500000000
   }
 ]

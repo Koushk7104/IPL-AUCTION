@@ -8,7 +8,7 @@ let Player, Team, AuctionState, BidHistory;
 let demoData;
 
 let timerInterval = null;
-let lastBidTimestamp = 0;
+
 let isDemoMode = false;
 
 const broadcastPlayerRefresh = (io) => {
@@ -614,12 +614,6 @@ const initSocket = (server, demoMode = false) => {
       }
 
       try {
-        const now = Date.now();
-        if (now - lastBidTimestamp < 2000) {
-          return socket.emit('error', 'Please wait 2 seconds between bids.');
-        }
-        lastBidTimestamp = now;
-
         const teamId = (socket.user.id || socket.user._id || '').toString();
         const state = await dataLayer.getAuctionState();
 
