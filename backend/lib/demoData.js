@@ -69,31 +69,37 @@ const loadManifestPlayers = () => loadJsonIfExists('players.json');
 const loadManifestTeams = () => loadJsonIfExists('teams.json');
 
 const buildDemoTeams = async () => {
+  const salt = await bcrypt.genSalt(10);
+
   const manifestTeams = loadManifestTeams();
   if (Array.isArray(manifestTeams) && manifestTeams.length > 0) {
-    return manifestTeams.map((team, index) => ({
-      _id: team._id || `manifest-team-${index + 1}`,
-      username: (team.username || team.teamCode || team.shortCode || `team-${index + 1}`).toLowerCase(),
-      password: team.password || 'password123',
-      teamName: team.teamName || team.name || `Team ${index + 1}`,
-      logo: toAbsoluteAssetUrl(team.logo || team.logoUrl || team.teamLogo || team.image || ''),
-      initialPurse: team.initialPurse || 2100000000,
-      remainingPurse: team.remainingPurse || team.initialPurse || 2100000000,
-      squad: team.squad || [],
-      squadStrength: team.squadStrength || 0,
-      avgRating: team.avgRating || 0,
-      roleCounts: team.roleCounts || {
-        batters: 0,
-        bowlers: 0,
-        allRounders: 0,
-        wicketKeepers: 0
-      },
-      highestPurchase: team.highestPurchase || 0,
-      cheapestPurchase: team.cheapestPurchase || 0
+    return Promise.all(manifestTeams.map(async (team, index) => {
+      const seedTeam = teamsData.find(t => t.username.toLowerCase() === team.username?.toLowerCase() || t.teamName === team.teamName);
+      const rawPassword = team.password || seedTeam?.password || 'password123';
+      const passwordHash = await bcrypt.hash(rawPassword, salt);
+
+      return {
+        _id: team._id || `manifest-team-${index + 1}`,
+        username: (team.username || team.teamCode || team.shortCode || `team-${index + 1}`).toLowerCase(),
+        password: passwordHash,
+        teamName: team.teamName || team.name || `Team ${index + 1}`,
+        logo: toAbsoluteAssetUrl(team.logo || team.logoUrl || team.teamLogo || team.image || ''),
+        initialPurse: team.initialPurse || 2100000000,
+        remainingPurse: team.remainingPurse || team.initialPurse || 2100000000,
+        squad: team.squad || [],
+        squadStrength: team.squadStrength || 0,
+        avgRating: team.avgRating || 0,
+        roleCounts: team.roleCounts || {
+          batters: 0,
+          bowlers: 0,
+          allRounders: 0,
+          wicketKeepers: 0
+        },
+        highestPurchase: team.highestPurchase || 0,
+        cheapestPurchase: team.cheapestPurchase || 0
+      };
     }));
   }
-
-  const salt = await bcrypt.genSalt(10);
 
   return Promise.all(teamsData.map(async (team) => {
     const passwordHash = await bcrypt.hash(team.password || 'password123', salt);
