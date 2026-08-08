@@ -49,7 +49,12 @@ router.post('/login', async (req, res) => {
     if (req.app.locals.demoMode) {
       const demoTeam = await getDemoTeamByUsername(username);
 
-      if (!demoTeam || password !== 'password123') {
+      if (!demoTeam) {
+        return res.status(401).json({ message: 'Invalid username or password' });
+      }
+
+      const isMatch = await bcrypt.compare(password, demoTeam.password);
+      if (!isMatch) {
         return res.status(401).json({ message: 'Invalid username or password' });
       }
 

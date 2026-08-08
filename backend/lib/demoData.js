@@ -94,27 +94,29 @@ const buildDemoTeams = async () => {
   }
 
   const salt = await bcrypt.genSalt(10);
-  const passwordHash = await bcrypt.hash('password123', salt);
 
-  return teamsData.map((team) => ({
-    _id: `demo-${team.username}`,
-    username: team.username,
-    password: passwordHash,
-    teamName: team.teamName,
-    logo: `https://api.dicebear.com/7.x/identicon/svg?seed=${encodeURIComponent(team.username)}&backgroundColor=0b0f19&color=f5c453`,
-    initialPurse: 2100000000,
-    remainingPurse: 2100000000,
-    squad: [],
-    squadStrength: 0,
-    avgRating: 0,
-    roleCounts: {
-      batters: 0,
-      bowlers: 0,
-      allRounders: 0,
-      wicketKeepers: 0
-    },
-    highestPurchase: 0,
-    cheapestPurchase: 0
+  return Promise.all(teamsData.map(async (team) => {
+    const passwordHash = await bcrypt.hash(team.password || 'password123', salt);
+    return {
+      _id: `demo-${team.username}`,
+      username: team.username,
+      password: passwordHash,
+      teamName: team.teamName,
+      logo: `https://api.dicebear.com/7.x/identicon/svg?seed=${encodeURIComponent(team.username)}&backgroundColor=0b0f19&color=f5c453`,
+      initialPurse: 2100000000,
+      remainingPurse: 2100000000,
+      squad: [],
+      squadStrength: 0,
+      avgRating: 0,
+      roleCounts: {
+        batters: 0,
+        bowlers: 0,
+        allRounders: 0,
+        wicketKeepers: 0
+      },
+      highestPurchase: 0,
+      cheapestPurchase: 0
+    };
   }));
 };
 
