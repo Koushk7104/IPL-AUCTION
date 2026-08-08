@@ -65,16 +65,16 @@ function getAvatar(name) {
 }
 
 const teamsData = [
-  { teamName: 'Mumbai Indians', username: 'mi' },
-  { teamName: 'Chennai Super Kings', username: 'csk' },
-  { teamName: 'Royal Challengers Bengaluru', username: 'rcb' },
-  { teamName: 'Kolkata Knight Riders', username: 'kkr' },
-  { teamName: 'Rajasthan Royals', username: 'rr' },
-  { teamName: 'Gujarat Titans', username: 'gt' },
-  { teamName: 'Lucknow Super Giants', username: 'lsg' },
-  { teamName: 'Delhi Capitals', username: 'dc' },
-  { teamName: 'Sunrisers Hyderabad', username: 'srh' },
-  { teamName: 'Punjab Kings', username: 'pbks' }
+  { teamName: 'Mumbai Indians', username: 'mi', password: '9966555279' },
+  { teamName: 'Chennai Super Kings', username: 'csk', password: '8978017616' },
+  { teamName: 'Royal Challengers Bengaluru', username: 'rcb', password: '7416085085' },
+  { teamName: 'Kolkata Knight Riders', username: 'kkr', password: '9393923889' },
+  { teamName: 'Rajasthan Royals', username: 'rr', password: '7032678126' },
+  { teamName: 'Gujarat Titans', username: 'gt', password: '8969049234' },
+  { teamName: 'Lucknow Super Giants', username: 'lsg', password: '9989276475' },
+  { teamName: 'Delhi Capitals', username: 'dc', password: '9121533491' },
+  { teamName: 'Sunrisers Hyderabad', username: 'srh', password: '6302618426' },
+  { teamName: 'Punjab Kings', username: 'pbks', password: '9392892120' }
 ];
 
 const playersRaw = [
@@ -581,14 +581,14 @@ const seedDB = async ({ exit = true } = {}) => {
 
     console.log('Seeding Teams (Franchises)...');
     const salt = await bcrypt.genSalt(10);
-    const defaultPasswordHash = await bcrypt.hash('password123', salt);
 
     const createdTeams = [];
     for (const t of teamsData) {
+      const passwordHash = await bcrypt.hash(t.password, salt);
       const team = new Team({
         teamName: t.teamName,
         username: t.username,
-        password: defaultPasswordHash,
+        password: passwordHash,
         logo: `https://api.dicebear.com/7.x/identicon/svg?seed=${encodeURIComponent(t.username)}&backgroundColor=0b0f19&color=f5c453`,
         initialPurse: 2100000000,
         remainingPurse: 2100000000,
